@@ -1,8 +1,16 @@
+body {
+  background-image: url("../img/wallpaper.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
 @import "./base/Reset.scss";
 @import "./base/Variables.scss";
 
+
 .pied{
+    font-weight: bolder;
     font-size: 50px;
-    color: red;
-    font-weight: bold;
 }

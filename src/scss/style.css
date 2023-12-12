@@ -1,9 +1,17 @@
+body {
+  background-image: url("../img/wallpaper.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed; }
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box; }
 
-ul, li {
+ul,
+li {
   list-style: none; }
 
 a {
@@ -20,8 +28,7 @@ a {
 /*Safari*/
 /*Settings*/
 .pied {
-  font-size: 50px;
-  color: red;
-  font-weight: bold; }
+  font-weight: bolder;
+  font-size: 50px; }
 
 /*# sourceMappingURL=style.css.map */
