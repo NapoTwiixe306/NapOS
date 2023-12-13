@@ -9,9 +9,4 @@ body {
 @import "./base/Reset.scss";
 @import "./base/Variables.scss";
 
-@import './views/login.scss';
-
-.pied{
-    font-weight: bolder;
-    font-size: 2vw;
-}
+@import "./views/login.scss";
