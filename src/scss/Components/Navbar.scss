@@ -10,9 +10,9 @@
   bottom: 7px;
   left: 50%;
   transform: translateX(-50%);
-  height: 90px;
-  width: 90%; // Utilisation d'un pourcentage pour s'adapter à n'importe quelle taille d'écran
-  max-width: 1500px; // Ajout d'une largeur maximale pour éviter une expansion excessive sur de grands écrans
+  height: 8vh;
+  width: 95%; // Utilisation d'un pourcentage pour s'adapter à n'importe quelle taille d'écran
+  max-width: 1550px; // Ajout d'une largeur maximale pour éviter une expansion excessive sur de grands écrans
   background-color: $Background_Navbar;
   backdrop-filter: blur(50px);
   border-radius: 20px;
