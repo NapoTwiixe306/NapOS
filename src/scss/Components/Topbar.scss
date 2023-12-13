@@ -1,13 +1,81 @@
 @import "../base/Variables.scss";
+
 .Topbar_Container {
   width: 100%;
   height: 25px;
   background-color: $BackGround_TopBar;
-  .Topbar{
-    display: flex;
-    .list{
-        display: flex;
-        gap: 10px;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px; /* Ajustez la marge */
 }
+
+.Topbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-grow: 1; /* Permet à .list de prendre tout l'espace restant */
+
+  .icon {
+    display: flex;
+    align-items: center;
+  }
+
+  .list {
+    display: flex;
+    gap: 10px;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+
+    .dropbtn {
+      font-size: 16px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: $BackGround_TopBar;
+      margin-top: 3px;
+      width: 100px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+
+      .dropdown-options {
+        color: $Black;
+        padding: 5px 5px;
+        text-decoration: none;
+        display: block;
+        font-size: 16px;
+      }
+
+      .dropdown-options:hover {
+        background-color: red;
+        cursor: pointer;
+      }
+    }
+
+    &:hover .dropdown-content {
+      display: block;
+    }
+  }
+
+
+
+  .icons_topbar {
+    margin-left: auto; // This will push .icons_topbar to the right
+    display: flex;
+    gap: 30px;
+    p{
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        font-weight: bold;
+    }
+  }
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   background-image: url("../img/wallpaper.png");
   background-repeat: no-repeat;
@@ -42,12 +43,61 @@ a {
 .Topbar_Container {
   width: 100%;
   height: 25px;
-  background-color: #ffffff99; }
-  .Topbar_Container .Topbar {
-    display: flex; }
-    .Topbar_Container .Topbar .list {
+  background-color: #ffffff99;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  /* Ajustez la marge */ }
+
+.Topbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-grow: 1;
+  /* Permet à .list de prendre tout l'espace restant */ }
+  .Topbar .icon {
+    display: flex;
+    align-items: center; }
+  .Topbar .list {
+    display: flex;
+    gap: 10px; }
+  .Topbar .dropdown {
+    position: relative;
+    display: inline-block; }
+    .Topbar .dropdown .dropbtn {
+      font-size: 16px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer; }
+    .Topbar .dropdown .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #ffffff99;
+      margin-top: 3px;
+      width: 100px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1; }
+      .Topbar .dropdown .dropdown-content .dropdown-options {
+        color: #000000;
+        padding: 5px 5px;
+        text-decoration: none;
+        display: block;
+        font-size: 16px; }
+      .Topbar .dropdown .dropdown-content .dropdown-options:hover {
+        background-color: red;
+        cursor: pointer; }
+    .Topbar .dropdown:hover .dropdown-content {
+      display: block; }
+  .Topbar .icons_topbar {
+    margin-left: auto;
+    display: flex;
+    gap: 30px; }
+    .Topbar .icons_topbar p {
       display: flex;
-      gap: 10px; }
+      align-items: center;
+      font-size: 16px;
+      font-weight: bold; }
 
 footer {
   position: absolute;
