@@ -65,17 +65,14 @@
     }
   }
 
-
-
   .icons_topbar {
     margin-left: auto; // This will push .icons_topbar to the right
     display: flex;
     gap: 30px;
-    p{
-        display: flex;
-        align-items: center;
-        font-size: 16px;
-        font-weight: bold;
+    p {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
     }
   }
 }

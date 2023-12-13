@@ -1,8 +1,8 @@
 import Image from "next/image";
 import icon from "../img/icons/icons.png";
 import battery from "../img/icons/Battry.svg";
-import search from '../img/icons/Search.svg'
-import wifi from '../img/icons/Wifi.svg'
+import search from "../img/icons/Search.svg";
+import wifi from "../img/icons/Wifi.svg";
 import { Topbar_List_Default } from "./Topbar_List_default";
 
 export default function Topbar() {
@@ -31,18 +31,9 @@ export default function Topbar() {
           ))}
         </div>
         <div className="icons_topbar">
-          <Image
-            src={battery}
-            alt="Battry"
-          />
-          <Image
-            src={search}
-            alt="Battry"
-          />
-          <Image
-            src={wifi}
-            alt="Battry"
-          />
+          <Image src={battery} alt="Battry" />
+          <Image src={search} alt="Battry" />
+          <Image src={wifi} alt="Battry" />
           <p className="date">Jeu. 7 Déc. 11:24</p>
         </div>
       </div>

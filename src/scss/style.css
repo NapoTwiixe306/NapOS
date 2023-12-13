@@ -4,20 +4,24 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+}
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: inter; }
+  font-family: inter;
+}
 
 ul,
 li {
-  list-style: none; }
+  list-style: none;
+}
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 /*Light Theme*/
 /*TopBar*/
@@ -48,60 +52,72 @@ a {
   align-items: center;
   justify-content: space-between;
   padding: 0 10px;
-  /* Ajustez la marge */ }
+  /* Ajustez la marge */
+}
 
 .Topbar {
   display: flex;
   align-items: center;
   gap: 10px;
   flex-grow: 1;
-  /* Permet à .list de prendre tout l'espace restant */ }
-  .Topbar .icon {
-    display: flex;
-    align-items: center; }
-  .Topbar .list {
-    display: flex;
-    gap: 10px; }
-  .Topbar .dropdown {
-    position: relative;
-    display: inline-block; }
-    .Topbar .dropdown .dropbtn {
-      font-size: 16px;
-      background-color: transparent;
-      border: none;
-      cursor: pointer; }
-    .Topbar .dropdown .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #ffffff99;
-      margin-top: 3px;
-      width: 100px;
-      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-      z-index: 1; }
-      .Topbar .dropdown .dropdown-content .dropdown-options {
-        color: #000000;
-        padding: 5px 5px;
-        text-decoration: none;
-        display: block;
-        font-size: 16px; }
-      .Topbar .dropdown .dropdown-content .dropdown-options:hover {
-        background-color: red;
-        cursor: pointer; }
-    .Topbar .dropdown:hover .dropdown-content {
-      display: block; }
-  .Topbar .icons_topbar {
-    margin-left: auto;
-    display: flex;
-    gap: 30px; }
-    .Topbar .icons_topbar p {
-      display: flex;
-      align-items: center;
-      font-size: 16px;
-      font-weight: bold; }
+  /* Permet à .list de prendre tout l'espace restant */
+}
+.Topbar .icon {
+  display: flex;
+  align-items: center;
+}
+.Topbar .list {
+  display: flex;
+  gap: 10px;
+}
+.Topbar .dropdown {
+  position: relative;
+  display: inline-block;
+}
+.Topbar .dropdown .dropbtn {
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.Topbar .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff99;
+  margin-top: 3px;
+  width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.Topbar .dropdown .dropdown-content .dropdown-options {
+  color: #000000;
+  padding: 5px 5px;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+}
+.Topbar .dropdown .dropdown-content .dropdown-options:hover {
+  background-color: red;
+  cursor: pointer;
+}
+.Topbar .dropdown:hover .dropdown-content {
+  display: block;
+}
+.Topbar .icons_topbar {
+  margin-left: auto;
+  display: flex;
+  gap: 30px;
+}
+.Topbar .icons_topbar p {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
 
 footer {
   position: absolute;
-  bottom: 0; }
+  bottom: 0;
+}
 
 /*Light Theme*/
 /*TopBar*/
@@ -118,37 +134,45 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 100vh; }
-  .login_view .Date_Hour {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 30px; }
-    .login_view .Date_Hour .date {
-      font-size: 2vw;
-      color: #605e5e; }
-    .login_view .Date_Hour .hour {
-      font-size: 8vw;
-      font-weight: bolder;
-      color: #4c196b; }
-  .login_view .input {
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    .login_view .input input[type="text"] {
-      margin: 10px;
-      padding: 7px 10px;
-      border: none;
-      border-radius: 25px;
-      background-color: #908c8cad;
-      backdrop-filter: blur(25px); }
-      .login_view .input input[type="text"]::placeholder {
-        font-size: 13px;
-        color: #cccccc; }
-      .login_view .input input[type="text"]:focus {
-        outline: none;
-        color: #ffffff; }
+  height: 100vh;
+}
+.login_view .Date_Hour {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 30px;
+}
+.login_view .Date_Hour .date {
+  font-size: 2vw;
+  color: #605e5e;
+}
+.login_view .Date_Hour .hour {
+  font-size: 8vw;
+  font-weight: bolder;
+  color: #4c196b;
+}
+.login_view .input {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login_view .input input[type="text"] {
+  margin: 10px;
+  padding: 7px 10px;
+  border: none;
+  border-radius: 25px;
+  background-color: #908c8cad;
+  backdrop-filter: blur(25px);
+}
+.login_view .input input[type="text"]::placeholder {
+  font-size: 13px;
+  color: #cccccc;
+}
+.login_view .input input[type="text"]:focus {
+  outline: none;
+  color: #ffffff;
+}
 
 /*Light Theme*/
 /*TopBar*/
