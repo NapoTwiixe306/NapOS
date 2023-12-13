@@ -1,0 +1,46 @@
+
+@import '../base/Variables.scss';
+.login_view{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+
+  .Date_Hour{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    margin-top: 50px;
+    .date{
+        font-size: 2vw;
+        color: $Text_Day;
+    }
+    
+    .hour{
+        font-size: 6vw;
+        font-weight: bolder;
+        color: $Hour_Text;
+    }
+  }
+
+  .input {
+    margin-bottom: 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    input[type="text"]{
+        margin: 10px;
+        padding: 7px 10px;
+        border: none;
+        border-radius: 25px;
+        background-color: $Input_Login;
+        backdrop-filter: blur(25px);
+
+        &::placeholder{
+            color: $Placeholder_Input_Login;
+        }
+    }
+  }
+}

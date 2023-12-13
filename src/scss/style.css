@@ -27,8 +27,52 @@ a {
 /*Navbar*/
 /*Safari*/
 /*Settings*/
+/*Light Theme*/
+/*TopBar*/
+/*Navbar*/
+/*Safari*/
+/*Settings*/
+/*DarkTheme*/
+/*TopBar*/
+/*Navbar*/
+/*Safari*/
+/*Settings*/
+.login_view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh; }
+  .login_view .Date_Hour {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    margin-top: 50px; }
+    .login_view .Date_Hour .date {
+      font-size: 2vw;
+      color: #605e5e; }
+    .login_view .Date_Hour .hour {
+      font-size: 6vw;
+      font-weight: bolder;
+      color: #9e00ff; }
+  .login_view .input {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .login_view .input input[type="text"] {
+      margin: 10px;
+      padding: 7px 10px;
+      border: none;
+      border-radius: 25px;
+      background-color: #908c8cad;
+      backdrop-filter: blur(25px); }
+      .login_view .input input[type="text"]::placeholder {
+        color: #cccccc; }
+
 .pied {
   font-weight: bolder;
-  font-size: 50px; }
+  font-size: 2vw; }
 
 /*# sourceMappingURL=style.css.map */
