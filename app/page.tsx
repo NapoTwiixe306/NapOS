@@ -1,9 +1,11 @@
 import Image from "next/image";
 import avatar from "../src/img/login/avatar.svg";
 import "../src/scss/App.scss";
+import Head from "next/head";
 export default function page() {
   return (
     <>
+    
       <div className="login_view">
         <div className="Date_Hour">
           <p className="date">Wednesday Dec 6</p>

@@ -9,4 +9,9 @@ body {
 @import "./base/Reset.scss";
 @import "./base/Variables.scss";
 
+/*Components*/
+@import './Components/Topbar.scss';
+@import './Components/Navbar.scss';
+
 @import "./views/login.scss";
+@import "./views/connected.scss";

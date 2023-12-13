@@ -28,6 +28,11 @@ a {
 /*Navbar*/
 /*Safari*/
 /*Settings*/
+/*Components*/
+footer {
+  position: absolute;
+  bottom: 0; }
+
 /*Light Theme*/
 /*TopBar*/
 /*Navbar*/
@@ -74,5 +79,16 @@ a {
       .login_view .input input[type="text"]:focus {
         outline: none;
         color: #ffffff; }
+
+/*Light Theme*/
+/*TopBar*/
+/*Navbar*/
+/*Safari*/
+/*Settings*/
+/*DarkTheme*/
+/*TopBar*/
+/*Navbar*/
+/*Safari*/
+/*Settings*/
 
 /*# sourceMappingURL=style.css.map */
