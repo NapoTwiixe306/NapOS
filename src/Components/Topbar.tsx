@@ -3,7 +3,7 @@ import icon from "../img/icons/icons.png";
 import battery from "../img/icons/Battry.svg";
 import search from "../img/icons/Search.svg";
 import wifi from "../img/icons/Wifi.svg";
-import { Topbar_List_Default } from "./Topbar_List_default";
+import { Topbar_List_Default } from "./List/Topbar_List_default";
 
 export default function Topbar() {
   return (
