@@ -8,7 +8,8 @@ body {
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: inter; }
 
 ul,
 li {
@@ -46,16 +47,15 @@ a {
   .login_view .Date_Hour {
     display: flex;
     flex-direction: column;
-    gap: 15px;
     text-align: center;
-    margin-top: 50px; }
+    margin-top: 30px; }
     .login_view .Date_Hour .date {
       font-size: 2vw;
       color: #605e5e; }
     .login_view .Date_Hour .hour {
-      font-size: 6vw;
+      font-size: 8vw;
       font-weight: bolder;
-      color: #9e00ff; }
+      color: #4c196b; }
   .login_view .input {
     margin-bottom: 20px;
     display: flex;
@@ -69,6 +69,7 @@ a {
       background-color: #908c8cad;
       backdrop-filter: blur(25px); }
       .login_view .input input[type="text"]::placeholder {
+        font-size: 13px;
         color: #cccccc; }
 
 .pied {

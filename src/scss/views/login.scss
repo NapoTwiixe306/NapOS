@@ -10,16 +10,15 @@
   .Date_Hour{
     display: flex;
     flex-direction: column;
-    gap: 15px;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 30px;
     .date{
         font-size: 2vw;
         color: $Text_Day;
     }
     
     .hour{
-        font-size: 6vw;
+        font-size: 8vw;
         font-weight: bolder;
         color: $Hour_Text;
     }
@@ -39,6 +38,7 @@
         backdrop-filter: blur(25px);
 
         &::placeholder{
+            font-size: 13px;
             color: $Placeholder_Input_Login;
         }
     }
