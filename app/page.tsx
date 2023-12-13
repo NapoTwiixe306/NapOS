@@ -5,7 +5,6 @@ import Head from "next/head";
 export default function page() {
   return (
     <>
-    
       <div className="login_view">
         <div className="Date_Hour">
           <p className="date">Wednesday Dec 6</p>

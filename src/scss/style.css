@@ -29,6 +29,26 @@ a {
 /*Safari*/
 /*Settings*/
 /*Components*/
+/*Light Theme*/
+/*TopBar*/
+/*Navbar*/
+/*Safari*/
+/*Settings*/
+/*DarkTheme*/
+/*TopBar*/
+/*Navbar*/
+/*Safari*/
+/*Settings*/
+.Topbar_Container {
+  width: 100%;
+  height: 25px;
+  background-color: #ffffff99; }
+  .Topbar_Container .Topbar {
+    display: flex; }
+    .Topbar_Container .Topbar .list {
+      display: flex;
+      gap: 10px; }
+
 footer {
   position: absolute;
   bottom: 0; }
