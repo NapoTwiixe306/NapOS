@@ -71,6 +71,9 @@ a {
       .login_view .input input[type="text"]::placeholder {
         font-size: 13px;
         color: #cccccc; }
+      .login_view .input input[type="text"]:focus {
+        outline: none;
+        color: #ffffff; }
 
 .pied {
   font-weight: bolder;

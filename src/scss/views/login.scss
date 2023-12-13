@@ -41,6 +41,10 @@
             font-size: 13px;
             color: $Placeholder_Input_Login;
         }
+        &:focus{
+            outline: none;
+            color: $White;
+        }
     }
   }
 }
