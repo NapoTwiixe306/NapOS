@@ -21,112 +21,28 @@ import Trash from "../img/Navbar/Trash.png";
 export default function Navbar() {
   return (
     <footer className="footer">
-      <Image
-        src={Finder}
-        alt=""
-        layout="responsive"
-        style={{ cursor: "pointer" }}
-      />
-      <Image
-        src={Launch}
-        alt=""
-        layout="responsive"
-        style={{ cursor: "pointer" }}
-      />
-      <Image
-        src={Safari}
-        alt=""
-        layout="responsive"
-        style={{ cursor: "pointer" }}
-      />
-      <Image
-        src={Imessage}
-        alt=""
-        layout="responsive"
-        style={{ cursor: "pointer" }}
-      />
-      <Image
-        src={Mail}
-        alt=""
-        layout="responsive"
-        style={{ cursor: "pointer" }}
-      />
-      <Image
-        src={Maps}
-        alt=""
-        layout="responsive"
-        style={{ cursor: "pointer" }}
-      />
-      <Image
-        src={Photo}
-        alt=""
-        layout="responsive"
-        style={{ cursor: "pointer" }}
-      />
-      <Image
-        src={Facetime}
-        alt=""
-        layout="responsive"
-        style={{ cursor: "pointer" }}
-      />
-      <Image
-        src={Calendar}
-        alt=""
-        layout="responsive"
-        style={{ cursor: "pointer" }}
-      />
-      <Image
-        src={Contact}
-        alt=""
-        layout="responsive"
-        style={{ cursor: "pointer" }}
-      />
-      <Image
-        src={AppleTV}
-        alt=""
-        layout="responsive"
-        style={{ cursor: "pointer" }}
-      />
-      <Image
-        src={Settings}
-        alt=""
-        layout="responsive"
-        style={{ cursor: "pointer" }}
-      />
-      <Image
-        src={Note}
-        alt=""
-        layout="responsive"
-        style={{ cursor: "pointer" }}
-      />
-      <Image
-        src={Music}
-        alt=""
-        layout="responsive"
-        style={{ cursor: "pointer" }}
-      />
-
+      <Image src={Finder} alt="" layout="responsive" />
+      <Image src={Launch} alt="" layout="responsive" />
+      <Image src={Safari} alt="" layout="responsive" />
+      <Image src={Imessage} alt="" layout="responsive" />
+      <Image src={Mail} alt="" layout="responsive" />
+      <Image src={Maps} alt="" layout="responsive" />
+      <Image src={Photo} alt="" layout="responsive" />
+      <Image src={Facetime} alt="" layout="responsive" />
+      <Image src={Calendar} alt="" layout="responsive" />
+      <Image src={Contact} alt="" layout="responsive" />
+      <Image src={AppleTV} alt="" layout="responsive" />
+      <Image src={Settings} alt="" layout="responsive" />
+      <Image src={Note} alt="" layout="responsive" />
+      <Image src={Music} alt="" layout="responsive" />
+      
       {/* Separator */}
       <div className="separator"></div>
+      
+      <Image src={Visual} alt="" layout="responsive" />
+      <Image src={Folder} alt="" layout="responsive" />
+      <Image src={Trash} alt="" layout="responsive" />
 
-      <Image
-        src={Visual}
-        alt=""
-        layout="responsive"
-        style={{ cursor: "pointer" }}
-      />
-      <Image
-        src={Folder}
-        alt=""
-        layout="responsive"
-        style={{ cursor: "pointer" }}
-      />
-      <Image
-        src={Trash}
-        alt=""
-        layout="responsive"
-        style={{ cursor: "pointer" }}
-      />
     </footer>
   );
 }
