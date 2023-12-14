@@ -13,5 +13,8 @@ body {
 @import "./Components/Topbar.scss";
 @import "./Components/Navbar.scss";
 
+/*App Design*/
+@import './Components/App/Safari.scss';
+
 @import "./views/login.scss";
 @import "./views/connected.scss";
