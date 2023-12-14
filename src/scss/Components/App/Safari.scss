@@ -1,0 +1,10 @@
+@import "../../base/Variables.scss";
+
+.safari_container{
+    width: 100%;
+    background-color: $BackGround_TopBar;
+    backdrop-filter: blur(50px);
+    border-top-right-radius: 25px;
+    border-radius: 15px;
+    height: 89vh;
+}

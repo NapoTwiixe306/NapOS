@@ -142,6 +142,24 @@ a {
 /*Navbar*/
 /*Safari*/
 /*Settings*/
+.safari_container {
+  width: 100%;
+  background-color: #ffffff99;
+  backdrop-filter: blur(50px);
+  border-top-right-radius: 25px;
+  border-radius: 15px;
+  height: 89vh; }
+
+/*Light Theme*/
+/*TopBar*/
+/*Navbar*/
+/*Safari*/
+/*Settings*/
+/*DarkTheme*/
+/*TopBar*/
+/*Navbar*/
+/*Safari*/
+/*Settings*/
 .login_view {
   display: flex;
   flex-direction: column;
