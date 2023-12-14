@@ -18,31 +18,139 @@ import Music from "../img/Navbar/spotify.png";
 import Visual from "../img/Navbar/Visual.png";
 import Folder from "../img/Navbar/Folder.png";
 import Trash from "../img/Navbar/Trash.png";
-export default function Navbar() {
-  return (
-    <footer className="footer">
-      <Image src={Finder} alt="" layout="responsive" />
-      <Image src={Launch} alt="" layout="responsive" />
-      <Image src={Safari} alt="" layout="responsive" />
-      <Image src={Imessage} alt="" layout="responsive" />
-      <Image src={Mail} alt="" layout="responsive" />
-      <Image src={Maps} alt="" layout="responsive" />
-      <Image src={Photo} alt="" layout="responsive" />
-      <Image src={Facetime} alt="" layout="responsive" />
-      <Image src={Calendar} alt="" layout="responsive" />
-      <Image src={Contact} alt="" layout="responsive" />
-      <Image src={AppleTV} alt="" layout="responsive" />
-      <Image src={Settings} alt="" layout="responsive" />
-      <Image src={Note} alt="" layout="responsive" />
-      <Image src={Music} alt="" layout="responsive" />
-      
-      {/* Separator */}
-      <div className="separator"></div>
-      
-      <Image src={Visual} alt="" layout="responsive" />
-      <Image src={Folder} alt="" layout="responsive" />
-      <Image src={Trash} alt="" layout="responsive" />
 
-    </footer>
+import SafariComponent from "./Application/Safari";
+import SettingsComponent from "./Application/Settings";
+
+export default function Navbar() {
+  const [showSafariComponent, setShowSafariComponent] = useState(false);
+  const [showSettingsComponent, setShowSettingsComponent] = useState(false);
+
+  const handleSafariClick = () => {
+    setShowSafariComponent(!showSafariComponent);
+    setShowSettingsComponent(false);
+  };
+
+  const handleSettingsClick = () => {
+    setShowSettingsComponent(!showSettingsComponent);
+    setShowSafariComponent(false);
+  };
+
+  return (
+    <>
+      {showSafariComponent && <SafariComponent />}
+      {showSettingsComponent && <SettingsComponent />}
+
+      <footer className="footer">
+        <Image
+          src={Finder}
+          alt=""
+          layout="responsive"
+          style={{ cursor: "pointer" }}
+        />
+        <Image
+          src={Launch}
+          alt=""
+          layout="responsive"
+          style={{ cursor: "pointer" }}
+        />
+        <Image
+          src={Safari}
+          alt=""
+          layout="responsive"
+          onClick={handleSafariClick}
+          style={{ cursor: "pointer" }}
+        />
+        <Image
+          src={Imessage}
+          alt=""
+          layout="responsive"
+          style={{ cursor: "pointer" }}
+        />
+        <Image
+          src={Mail}
+          alt=""
+          layout="responsive"
+          style={{ cursor: "pointer" }}
+        />
+        <Image
+          src={Maps}
+          alt=""
+          layout="responsive"
+          style={{ cursor: "pointer" }}
+        />
+        <Image
+          src={Photo}
+          alt=""
+          layout="responsive"
+          style={{ cursor: "pointer" }}
+        />
+        <Image
+          src={Facetime}
+          alt=""
+          layout="responsive"
+          style={{ cursor: "pointer" }}
+        />
+        <Image
+          src={Calendar}
+          alt=""
+          layout="responsive"
+          style={{ cursor: "pointer" }}
+        />
+        <Image
+          src={Contact}
+          alt=""
+          layout="responsive"
+          style={{ cursor: "pointer" }}
+        />
+        <Image
+          src={AppleTV}
+          alt=""
+          layout="responsive"
+          style={{ cursor: "pointer" }}
+        />
+        <Image
+          src={Settings}
+          alt=""
+          layout="responsive"
+          onClick={handleSettingsClick}
+          style={{ cursor: "pointer" }}
+        />
+        <Image
+          src={Note}
+          alt=""
+          layout="responsive"
+          style={{ cursor: "pointer" }}
+        />
+        <Image
+          src={Music}
+          alt=""
+          layout="responsive"
+          style={{ cursor: "pointer" }}
+        />
+
+        {/* Separator */}
+        <div className="separator"></div>
+
+        <Image
+          src={Visual}
+          alt=""
+          layout="responsive"
+          style={{ cursor: "pointer" }}
+        />
+        <Image
+          src={Folder}
+          alt=""
+          layout="responsive"
+          style={{ cursor: "pointer" }}
+        />
+        <Image
+          src={Trash}
+          alt=""
+          layout="responsive"
+          style={{ cursor: "pointer" }}
+        />
+      </footer>
+    </>
   );
 }
