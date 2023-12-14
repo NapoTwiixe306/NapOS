@@ -26,14 +26,22 @@ export default function Navbar() {
   const [showSafariComponent, setShowSafariComponent] = useState(false);
   const [showSettingsComponent, setShowSettingsComponent] = useState(false);
 
+  // Nouvelles variables d'état pour suivre l'état actif de Safari et Settings
+  const [isActiveSafari, setIsActiveSafari] = useState(false);
+  const [isActiveSettings, setIsActiveSettings] = useState(false);
+
   const handleSafariClick = () => {
     setShowSafariComponent(!showSafariComponent);
     setShowSettingsComponent(false);
+    setIsActiveSafari(!isActiveSafari); // Mettez à jour l'état actif de Safari
+    setIsActiveSettings(false); // Assurez-vous que l'autre état est désactivé
   };
 
   const handleSettingsClick = () => {
     setShowSettingsComponent(!showSettingsComponent);
     setShowSafariComponent(false);
+    setIsActiveSettings(!isActiveSettings); // Mettez à jour l'état actif de Settings
+    setIsActiveSafari(false); // Assurez-vous que l'autre état est désactivé
   };
 
   return (
@@ -59,6 +67,7 @@ export default function Navbar() {
           alt=""
           layout="responsive"
           onClick={handleSafariClick}
+          className={isActiveSafari ? "active" : ""}
           style={{ cursor: "pointer" }}
         />
         <Image
@@ -114,6 +123,7 @@ export default function Navbar() {
           alt=""
           layout="responsive"
           onClick={handleSettingsClick}
+          className={isActiveSettings ? "active" : ""}
           style={{ cursor: "pointer" }}
         />
         <Image

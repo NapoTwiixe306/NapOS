@@ -23,4 +23,8 @@
     border-radius: 500px;
     background-color: $Sepa;
   }
+  img.active {
+    border-bottom: 3px solid $Text_Day;
+
+  }
 }
