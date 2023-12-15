@@ -1,27 +1,34 @@
 @import "../../base/Variables.scss";
 .safari_container {
+  width: 100%;
+  height: 89vh;
+  overflow: hidden; /* Hide overflow for the entire container */
+  background-color: $BackGround_TopBar;
+  backdrop-filter: blur(50px);
+  border-radius: 15px;
+
+  .safari_topbar {
+    position: relative;
+    height: 30px;
     width: 100%;
-    height: 89vh;
-    overflow: hidden; /* Hide overflow for the entire container */
-    background-color: $BackGround_TopBar;
-    backdrop-filter: blur(50px);
-    border-radius: 15px;
-  
-    .safari_topbar {
-      width: 100%;
-      height: 30px;
-      border-top-right-radius: 15px;
-      border-top-left-radius: 15px;
-      background-color: $TopBar_Safari_Background;
+    height: 30px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    background-color: $TopBar_Safari_Background;
+    svg {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
     }
-  
-    .safari_content {
-      overflow-y: auto; /* Enable vertical scrolling for the content */
-      background-image: url("../../../img/Safari/Empty.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center center;
-      background-attachment: fixed;
-      height: calc(89vh - 30px);
-    }
+  }
+
+  .safari_content {
+    overflow-y: auto; /* Enable vertical scrolling for the content */
+    background-image: url("../../../img/Safari/Empty.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: calc(89vh - 30px);
+  }
 }

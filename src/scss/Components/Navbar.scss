@@ -16,7 +16,7 @@
   background-color: $Background_Navbar;
   backdrop-filter: blur(50px);
   border-radius: 20px;
-  
+
   .separator {
     width: 5px;
     height: 65px;
@@ -25,6 +25,5 @@
   }
   img.active {
     border-bottom: 3px solid $Text_Day;
-
   }
 }

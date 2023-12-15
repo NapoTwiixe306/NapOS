@@ -1,11 +1,11 @@
-version: '3.7'
+version: "3.7"
 
 services:
   napos:
     container_name: NapOS
-    restart: 'always'
+    restart: "always"
     build:
       context: .
-    
+
     ports:
       - "3000:3000"

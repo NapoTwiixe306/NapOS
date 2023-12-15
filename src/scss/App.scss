@@ -8,13 +8,13 @@ body {
 
 @import "./base/Reset.scss";
 @import "./base/Variables.scss";
-@import './fonts/font.scss';
+@import "./fonts/font.scss";
 /*Components*/
 @import "./Components/Topbar.scss";
 @import "./Components/Navbar.scss";
 
 /*App Design*/
-@import './Components/App/Safari.scss';
+@import "./Components/App/Safari.scss";
 
 @import "./views/login.scss";
 @import "./views/connected.scss";
