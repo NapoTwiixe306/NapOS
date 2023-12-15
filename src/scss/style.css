@@ -216,7 +216,8 @@ a {
     .safari_container .safari_topbar svg {
       position: absolute;
       top: 50%;
-      transform: translateY(-50%); }
+      transform: translateY(-50%);
+      margin-left: 15px; }
   .safari_container .safari_content {
     overflow-y: auto;
     /* Enable vertical scrolling for the content */
