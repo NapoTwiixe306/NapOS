@@ -1,6 +1,11 @@
 import React from "react";
 
 export default function Safari() {
+
+  function test() {
+    alert("test");
+  }
+
   return (
     <>
       <div className="safari_container">
@@ -11,8 +16,19 @@ export default function Safari() {
             height="12"
             viewBox="0 0 52 12"
             fill="none"
+            style={{ cursor: "pointer" }}
+
+            onClick={test}
+
           >
-            <circle cx="46" cy="6" r="6" fill="#5FCF65" />
+            <circle
+              cx="46"
+              cy="6"
+              r="6"
+              fill="#5FCF65"
+              style={{ cursor: "pointer" }}
+              onClick={test}
+            />
             <circle cx="26" cy="6" r="6" fill="#F8CE52" />
             <circle cx="6" cy="6" r="6" fill="#F96057" />
             <circle
