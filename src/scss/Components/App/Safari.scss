@@ -1,10 +1,27 @@
 @import "../../base/Variables.scss";
-
-.safari_container{
+.safari_container {
     width: 100%;
+    height: 89vh;
+    overflow: hidden; /* Hide overflow for the entire container */
     background-color: $BackGround_TopBar;
     backdrop-filter: blur(50px);
-    border-top-right-radius: 25px;
     border-radius: 15px;
-    height: 89vh;
+  
+    .safari_topbar {
+      width: 100%;
+      height: 30px;
+      border-top-right-radius: 15px;
+      border-top-left-radius: 15px;
+      background-color: $TopBar_Safari_Background;
+    }
+  
+    .safari_content {
+      overflow-y: auto; /* Enable vertical scrolling for the content */
+      background-image: url("../../../img/Safari/Empty.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      background-attachment: fixed;
+      height: calc(89vh - 30px);
+    }
 }
