@@ -1,35 +1,144 @@
 @import "../../base/Variables.scss";
+
 .safari_container {
   width: 100%;
   height: 89vh;
-  overflow: hidden; /* Hide overflow for the entire container */
+  overflow: hidden;
   background-color: $BackGround_TopBar;
   backdrop-filter: blur(50px);
   border-radius: 15px;
+  display: flex;
+  flex-direction: column;
 
   .safari_topbar {
     position: relative;
-    height: 30px;
+    height: 40px; // Hauteur mise à jour
     width: 100%;
-    height: 30px;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
     background-color: $TopBar_Safari_Background;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
     svg {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
       margin-left: 15px;
+    }
+
+    input[type="search"] {
+      width: 50%;
+      max-width: 80%;
+      margin: 0 auto;
+      position: relative;
+      border: none;
+      padding: 5px 5px;
+      border-radius: 5px;
+      background: rgba(0, 0, 0, 0.05);
+      &::placeholder {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 100%;
+      }
+      &:focus {
+        outline: none;
+      }
     }
   }
 
   .safari_content {
-    overflow-y: auto; /* Enable vertical scrolling for the content */
+    overflow-y: auto;
     background-image: url("../../../img/Safari/Empty.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    height: calc(89vh - 30px);
+    height: calc(89vh - 40px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    h1 {
+      color: white;
+      font-weight: bold;
+      text-align: start;
+    }
+    .content {
+      display: flex;
+      gap: 35px;
+      flex-direction: column;
+      .favorites {
+        h1{
+          margin-bottom: 25px;
+        }
+        .img {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          p {
+            color: $TextBase;
+          }
+        }
+      }
+      .privacy {
+        h1{
+          margin-bottom: 25px;
+        }
+        .box {
+          padding-left: 15px;
+          width: 600px;
+          height: 50px;
+          background-color: $Background_Utils;
+          display: flex;
+          gap: 15px;
+          align-items: center;
+          border-radius: 15px;
+
+          .Number {
+            font-weight: bold;
+            font-size: 25px;
+            color: $TextBase;
+          }
+          p {
+            color: $TextBase;
+          }
+        }
+      }
+      .siri {
+        h1{
+          margin-bottom: 25px;
+        }
+        
+        .suggestion_content {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-gap: 15px;
+          
+          .img {
+            width: 100%;
+            height: 70px;
+            background-color: $Background_Utils;
+            display: flex;
+            align-items: center;
+            border-radius: 10px;
+            img{
+              margin-left: auto;
+              width: 50px;
+              height: 50px;
+            }
+            p {
+              color: $TextBase;
+              width: 80%;
+              margin-left: 10px; // Ajustez la marge selon vos besoins
+            }
+          }
+        }
+      }
+      
+    }
   }
 }

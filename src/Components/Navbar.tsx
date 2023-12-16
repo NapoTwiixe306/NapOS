@@ -32,7 +32,7 @@ export default function Navbar() {
   const handleSafariClick = () => {
     setShowSafariComponent(!showSafariComponent);
     setShowSettingsComponent(false);
-    setIsActiveSafari(!isActiveSafari); 
+    setIsActiveSafari(!isActiveSafari);
     setIsActiveSettings(false);
   };
 
@@ -40,7 +40,7 @@ export default function Navbar() {
     setShowSettingsComponent(!showSettingsComponent);
     setShowSafariComponent(false);
     setIsActiveSettings(!isActiveSettings);
-    setIsActiveSafari(false); 
+    setIsActiveSafari(false);
   };
 
   return (
