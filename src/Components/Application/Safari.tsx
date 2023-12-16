@@ -1,7 +1,9 @@
-import React from "react";
+'use client'
+import React, {useState} from "react";
 import Image from "next/image";
 import moi from "../../img/Shape.png";
 import bg from "../../img/Suggestions/suggestion.png";
+import Portfolio from "./Portfolio";
 export default function Safari() {
   const suggestions = [
     "Desktop UI library for building applications.",
@@ -11,8 +13,23 @@ export default function Safari() {
     "Desktop UI library for building applications.",
     "Desktop UI library for building applications.",
   ];
-  function test() {
-    alert("test");
+  const [isFavoritesVisible, setFavoritesVisible] = useState(true);
+  const [isPrivacyVisible, setPrivacyVisible] = useState(true);
+  const [isSiriVisible, setSiriVisible] = useState(true);
+  const [isPortfolioVisible, setPortfolioVisible] = useState(false);
+
+  function handlePortfolioClick() {
+    setFavoritesVisible(false);
+    setPrivacyVisible(false);
+    setSiriVisible(false);
+    setPortfolioVisible(!isPortfolioVisible);
+  }
+
+  function handlePortfolioClose() {
+    setFavoritesVisible(true);
+    setPrivacyVisible(true);
+    setSiriVisible(true);
+    setPortfolioVisible(false);
   }
 
   return (
@@ -26,7 +43,6 @@ export default function Safari() {
             viewBox="0 0 52 12"
             fill="none"
             style={{ cursor: "pointer" }}
-            onClick={test}
           >
             {Array.from({ length: 3 }, (_, index) => (
               <circle
@@ -38,7 +54,6 @@ export default function Safari() {
                   index === 0 ? "#F96057" : index === 1 ? "#F8CE52" : "#5FCF65"
                 }
                 style={{ cursor: "pointer" }}
-                onClick={test}
               />
             ))}
             {Array.from({ length: 3 }, (_, index) => (
@@ -63,35 +78,50 @@ export default function Safari() {
         </div>
 
         <div className="safari_content">
+        {isPortfolioVisible && (
+            <Portfolio onClose={handlePortfolioClose} />
+          )}
+
           <div className="content">
-            <div className="favorites">
-              <h1>Favorites</h1>
-              <div className="img">
-                <Image src={moi} alt="moi" />
-                <p>julienmilants.fr</p>
+            {isFavoritesVisible && (
+              <div className="favorites">
+                <h1>Favorites</h1>
+                <div className="img">
+                  <Image
+                    src={moi}
+                    alt="moi"
+                    onClick={handlePortfolioClick}
+                    style={{ cursor: "pointer" }}
+                  />
+                  <p>julienmilants.fr</p>
+                </div>
               </div>
-            </div>
-            <div className="privacy">
-              <h1>Privacy Repport</h1>
-              <div className="box">
-                <p className="Number">13</p>
-                <p>
-                  In the last seven days, Safari has prevented 13 trackers from
-                  profiling you.
-                </p>
+            )}
+            {isPrivacyVisible && (
+              <div className="privacy">
+                <h1>Privacy Repport</h1>
+                <div className="box">
+                  <p className="Number">13</p>
+                  <p>
+                    In the last seven days, Safari has prevented 13 trackers
+                    from profiling you.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="siri">
-              <h1>Siri Suggestions</h1>
-              <div className="suggestion_content">
-                {suggestions.map((text, index) => (
-                  <div className="img" key={index}>
-                    <p>{text}</p>
-                    <Image src={bg} alt="alt" />
-                  </div>
-                ))}
+            )}
+            {isSiriVisible && (
+              <div className="siri">
+                <h1>Siri Suggestions</h1>
+                <div className="suggestion_content">
+                  {suggestions.map((text, index) => (
+                    <div className="img" key={index}>
+                      <p>{text}</p>
+                      <Image src={bg} alt="alt" />
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
+            )}
           </div>
         </div>
       </div>
