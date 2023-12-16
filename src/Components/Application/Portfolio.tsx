@@ -1,4 +1,3 @@
-// Portfolio.tsx
 import React from "react";
 
 interface PortfolioProps {
@@ -14,10 +13,10 @@ const Portfolio: React.FC<PortfolioProps> = ({ onClose }) => {
 
   return (
     <>
-    <div>
+      <div>
         <button onClick={handleClose}>Close</button>
         <p>lorem*500</p>
-    </div>
+      </div>
     </>
   );
 };
