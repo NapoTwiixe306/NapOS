@@ -1,8 +1,16 @@
 import React from "react";
 import Image from "next/image";
 import moi from "../../img/Shape.png";
-import bg from '../../img/Suggestions/suggestion.png'
+import bg from "../../img/Suggestions/suggestion.png";
 export default function Safari() {
+  const suggestions = [
+    "Desktop UI library for building applications.",
+    "Desktop UI library for building applications.",
+    "Desktop UI library for building applications.",
+    "Desktop UI library for building applications.",
+    "Desktop UI library for building applications.",
+    "Desktop UI library for building applications.",
+  ];
   function test() {
     alert("test");
   }
@@ -20,43 +28,31 @@ export default function Safari() {
             style={{ cursor: "pointer" }}
             onClick={test}
           >
-            <circle
-              cx="46"
-              cy="6"
-              r="6"
-              fill="#5FCF65"
-              style={{ cursor: "pointer" }}
-              onClick={test}
-            />
-            <circle cx="26" cy="6" r="6" fill="#F8CE52" />
-            <circle cx="6" cy="6" r="6" fill="#F96057" />
-            <circle
-              cx="6"
-              cy="6"
-              r="5.75"
-              stroke="black"
-              strokeOpacity="0.1"
-              strokeWidth="0.5"
-              style={{ mixBlendMode: "luminosity" }}
-            />
-            <circle
-              cx="26"
-              cy="6"
-              r="5.75"
-              stroke="black"
-              strokeOpacity="0.1"
-              strokeWidth="0.5"
-              style={{ mixBlendMode: "luminosity" }}
-            />
-            <circle
-              cx="46"
-              cy="6"
-              r="5.75"
-              stroke="black"
-              strokeOpacity="0.1"
-              strokeWidth="0.5"
-              style={{ mixBlendMode: "luminosity" }}
-            />
+            {Array.from({ length: 3 }, (_, index) => (
+              <circle
+                key={index}
+                cx={index * 20 + 6}
+                cy="6"
+                r="6"
+                fill={
+                  index === 0 ? "#F96057" : index === 1 ? "#F8CE52" : "#5FCF65"
+                }
+                style={{ cursor: "pointer" }}
+                onClick={test}
+              />
+            ))}
+            {Array.from({ length: 3 }, (_, index) => (
+              <circle
+                key={index}
+                cx={index * 20 + 6}
+                cy="6"
+                r="5.75"
+                stroke="black"
+                strokeOpacity="0.1"
+                strokeWidth="0.5"
+                style={{ mixBlendMode: "luminosity" }}
+              />
+            ))}
           </svg>
           <input
             type="search"
@@ -65,6 +61,7 @@ export default function Safari() {
             placeholder="Search or enter website name"
           />
         </div>
+
         <div className="safari_content">
           <div className="content">
             <div className="favorites">
@@ -87,49 +84,12 @@ export default function Safari() {
             <div className="siri">
               <h1>Siri Suggestions</h1>
               <div className="suggestion_content">
-                <div className="img">
-                  <p>Desktop UI library for building applications.</p>
-                  <Image 
-                    src={bg}
-                    alt="alt"
-                  />
-                </div>
-                <div className="img">
-                  <p>Desktop UI library for building applications.</p>
-                  <Image 
-                    src={bg}
-                    alt="alt"
-                  />
-                </div>
-                <div className="img">
-                  <p>Desktop UI library for building applications.</p>
-                  <Image 
-                    src={bg}
-                    alt="alt"
-                  />
-                </div>
-                <div className="img">
-                  <p>Desktop UI library for building applications.</p>
-                  <Image 
-                    src={bg}
-                    alt="alt"
-                  />
-                </div>
-                <div className="img">
-                  <p>Desktop UI library for building applications.</p>
-                  <Image 
-                    src={bg}
-                    alt="alt"
-                  />
-                </div>
-                <div className="img">
-                  <p>Desktop UI library for building applications.</p>
-                  <Image 
-                    src={bg}
-                    alt="alt"
-                  />
-                </div>
-                
+                {suggestions.map((text, index) => (
+                  <div className="img" key={index}>
+                    <p>{text}</p>
+                    <Image src={bg} alt="alt" />
+                  </div>
+                ))}
               </div>
             </div>
           </div>
