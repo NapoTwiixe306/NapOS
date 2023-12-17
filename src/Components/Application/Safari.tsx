@@ -1,5 +1,5 @@
-'use client'
-import React, {useState} from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
 import moi from "../../img/Shape.png";
 import bg from "../../img/Suggestions/suggestion.png";
@@ -36,6 +36,7 @@ export default function Safari() {
     <>
       <div className="safari_container">
         <div className="safari_topbar">
+        
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="52"
@@ -75,12 +76,20 @@ export default function Safari() {
             id=""
             placeholder="Search or enter website name"
           />
+          
         </div>
-
-        <div className="safari_content">
+        <div className="port_open">
         {isPortfolioVisible && (
-            <Portfolio onClose={handlePortfolioClose} />
+            <div className="port-open">
+                <div className="content">
+                  <p>julienmilants.fr </p>
+                  <button className="close" onClick={handlePortfolioClose}>x</button>
+                </div>
+            </div>
           )}
+        </div>
+        <div className="safari_content">
+          {isPortfolioVisible && <Portfolio onClose={handlePortfolioClose} />}
 
           <div className="content">
             {isFavoritesVisible && (
@@ -91,7 +100,9 @@ export default function Safari() {
                     src={moi}
                     alt="moi"
                     onClick={handlePortfolioClick}
-                    style={{ cursor: "pointer" }}
+                    width={70}
+                    height={85}
+                    style={{ cursor: "pointer", borderRadius: "5px" }}
                   />
                   <p>julienmilants.fr</p>
                 </div>

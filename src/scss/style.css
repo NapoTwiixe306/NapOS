@@ -206,6 +206,27 @@ a {
   border-radius: 15px;
   display: flex;
   flex-direction: column; }
+  .safari_container .port-open {
+    position: relative;
+    height: 25px;
+    width: 100%;
+    background-color: #d4d3d376; }
+    .safari_container .port-open .content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      width: 9%;
+      height: 25px;
+      background-color: rgba(192, 192, 192, 0.439); }
+      .safari_container .port-open .content p {
+        margin-left: 10px;
+        font-size: 18px;
+        font-weight: 499; }
+      .safari_container .port-open .content button {
+        border: none;
+        background-color: transparent;
+        font-size: 25px; }
   .safari_container .safari_topbar {
     position: relative;
     height: 40px;
@@ -216,7 +237,8 @@ a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.255); }
     .safari_container .safari_topbar svg {
       margin-left: 15px; }
     .safari_container .safari_topbar input[type="search"] {
@@ -305,6 +327,22 @@ a {
             color: #595858;
             width: 80%;
             margin-left: 10px; }
+
+/*Light Theme*/
+/*TopBar*/
+/*Navbar*/
+/*Safari*/
+/*Settings*/
+/*DarkTheme*/
+/*TopBar*/
+/*Navbar*/
+/*Safari*/
+/*Settings*/
+.test {
+  background-color: #232629a3;
+  backdrop-filter: blur(25px);
+  width: 100%;
+  height: 100%; }
 
 /*Light Theme*/
 /*TopBar*/
