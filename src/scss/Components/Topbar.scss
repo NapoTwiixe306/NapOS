@@ -68,6 +68,7 @@
   .icons_topbar {
     margin-left: auto; // This will push .icons_topbar to the right
     display: flex;
+    align-items: center;
     gap: 30px;
     p {
       display: flex;

@@ -3,6 +3,7 @@ import icon from "../img/icons/icons.png";
 import battery from "../img/icons/Battry.svg";
 import search from "../img/icons/Search.svg";
 import wifi from "../img/icons/Wifi.svg";
+import test from "../img/icons/utils.png";
 import { Topbar_List_Default } from "./List/Topbar_List_default";
 
 export default function Topbar() {
@@ -34,6 +35,7 @@ export default function Topbar() {
           <Image src={battery} alt="Battry" />
           <Image src={search} alt="Battry" />
           <Image src={wifi} alt="Battry" />
+          <Image src={test} alt="Battry" width={20} height={20}/>
           <p className="date">Jeu. 7 Déc. 11:24</p>
         </div>
       </div>
