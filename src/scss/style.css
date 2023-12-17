@@ -317,11 +317,13 @@ a {
 /*Navbar*/
 /*Safari*/
 /*Settings*/
-.test {
+.Portfolio_container {
   background-color: #232629a3;
   backdrop-filter: blur(25px);
   width: 100%;
   height: 100%; }
+  .Portfolio_container button {
+    cursor: pointer; }
 
 /*Light Theme*/
 /*TopBar*/
