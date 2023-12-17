@@ -31,7 +31,9 @@ export default function Safari() {
     setSiriVisible(true);
     setPortfolioVisible(false);
   }
-
+  const inputPlaceholder = isPortfolioVisible
+  ? "julienmilants.fr"
+  : "Search or enter website name";
   return (
     <>
       <div className="safari_container">
@@ -74,7 +76,7 @@ export default function Safari() {
             type="search"
             name=""
             id=""
-            placeholder="Search or enter website name"
+            placeholder={inputPlaceholder}
           />
           
         </div>

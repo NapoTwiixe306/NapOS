@@ -19,19 +19,21 @@
       justify-content: space-between;
       align-items: center;
       text-align: center;
-      width: 9%;
+      width: 11%;
       height: 25px;
-      background-color: rgba(192, 192, 192, 0.439);
+      background-color: rgba(71, 71, 71, 0.578);
       p{
         margin-left: 10px;
         font-size: 18px;
         font-weight: 499;
       }
       button{
+        margin-bottom: 3px;
         border: none;
         background-color: transparent;
         font-size: 25px;
         cursor: pointer;
+        margin-right: 5px;
       }
     }
   }
