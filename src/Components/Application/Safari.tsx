@@ -80,16 +80,6 @@ export default function Safari() {
           />
           
         </div>
-        <div className="port_open">
-        {isPortfolioVisible && (
-            <div className="port-open">
-                <div className="content">
-                  <p>julienmilants.fr </p>
-                  <button className="close" onClick={handlePortfolioClose}>x</button>
-                </div>
-            </div>
-          )}
-        </div>
         <div className="safari_content">
           {isPortfolioVisible && <Portfolio onClose={handlePortfolioClose} />}
 

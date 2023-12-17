@@ -9,34 +9,6 @@
   border-radius: 15px;
   display: flex;
   flex-direction: column;
-  .port-open{
-    position: relative;
-    height: 25px;
-    width: 100%;
-    background-color: #d4d3d376;
-    .content{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      text-align: center;
-      width: 11%;
-      height: 25px;
-      background-color: rgba(71, 71, 71, 0.578);
-      p{
-        margin-left: 10px;
-        font-size: 18px;
-        font-weight: 499;
-      }
-      button{
-        margin-bottom: 3px;
-        border: none;
-        background-color: transparent;
-        font-size: 25px;
-        cursor: pointer;
-        margin-right: 5px;
-      }
-    }
-  }
   .safari_topbar {
     position: relative;
     height: 40px;
