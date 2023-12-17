@@ -226,7 +226,8 @@ a {
       .safari_container .port-open .content button {
         border: none;
         background-color: transparent;
-        font-size: 25px; }
+        font-size: 25px;
+        cursor: pointer; }
   .safari_container .safari_topbar {
     position: relative;
     height: 40px;
