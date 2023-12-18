@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import moi from "../../img/Shape.png";
 import bg from "../../img/Suggestions/suggestion.png";
-import close from '../../img/close.svg'
+import close from "../../img/close.svg";
 import Portfolio from "./Portfolio";
 export default function Safari() {
   const suggestions = [
@@ -33,25 +33,15 @@ export default function Safari() {
     setPortfolioVisible(false);
   }
   const inputPlaceholder = isPortfolioVisible
-  ? "julienmilants.fr"
-  : "Search or enter website name";
+    ? "julienmilants.fr"
+    : "Search or enter website name";
   return (
     <>
       <div className="safari_container">
         <div className="safari_topbar">
-          <Image 
-            src={close}
-            alt="close"
-            
-          />
-          
-          <input
-            type="search"
-            name=""
-            id=""
-            placeholder={inputPlaceholder}
-          />
-          
+          <Image src={close} alt="close" />
+
+          <input type="search" name="" id="" placeholder={inputPlaceholder} />
         </div>
         <div className="safari_content">
           {isPortfolioVisible && <Portfolio onClose={handlePortfolioClose} />}

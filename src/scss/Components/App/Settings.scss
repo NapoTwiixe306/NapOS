@@ -1,33 +1,33 @@
-@import '../../base/Variables.scss';
-.Settings_Container{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
-    .Container{
-        width: 1100px;
+@import "../../base/Variables.scss";
+.Settings_Container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  .Container {
+    width: 1100px;
+    height: 550px;
+    background-color: $Background_Utils;
+    backdrop-filter: blur(50px);
+    border-radius: 20px;
+    .item {
+      display: flex;
+      justify-content: space-between;
+      .left {
+        width: 25%;
         height: 550px;
-        background-color: $Background_Utils;
-        backdrop-filter: blur(50px);
-        border-radius: 20px;
-        .item  {
-            display: flex;
-            justify-content: space-between;
-            .left{
-                width: 25%;
-                height: 550px;
-                background-color: $Rectangle_Background;
-                border-radius: 20px 0 0 20px;
-                img{
-                    margin: 15px;
-                }
-            }
-            .right{
-                width: 75%;
-                background-color: $White;
-                border-radius: 0 20px 20px 0;
-            }
+        background-color: $Rectangle_Background;
+        border-radius: 20px 0 0 20px;
+        img {
+          margin: 15px;
         }
+      }
+      .right {
+        width: 75%;
+        background-color: $White;
+        border-radius: 0 20px 20px 0;
+      }
     }
+  }
 }

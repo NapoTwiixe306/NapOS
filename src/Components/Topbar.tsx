@@ -35,7 +35,7 @@ export default function Topbar() {
           <Image src={battery} alt="Battry" />
           <Image src={search} alt="Battry" />
           <Image src={wifi} alt="Battry" />
-          <Image src={test} alt="Battry" width={20} height={20}/>
+          <Image src={test} alt="Battry" width={20} height={20} />
           <p className="date">Jeu. 7 Déc. 11:24</p>
         </div>
       </div>
