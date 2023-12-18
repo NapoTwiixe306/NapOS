@@ -11,5 +11,9 @@
         background-color: $Background_Utils;
         backdrop-filter: blur(50px);
         border-radius: 20px;
+        .item  {
+            display: flex;
+            justify-content: space-between;
+        }
     }
 }
