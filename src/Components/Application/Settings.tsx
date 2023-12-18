@@ -12,6 +12,7 @@ export default function Settings() {
               <Image src={close} alt="close" />
               <p>left</p>
             </div>
+            <div className="sepa"></div>
             <div className="right">right</div>
           </div>
         </div>
