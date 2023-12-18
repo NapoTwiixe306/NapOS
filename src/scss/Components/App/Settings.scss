@@ -14,6 +14,20 @@
         .item  {
             display: flex;
             justify-content: space-between;
+            .left{
+                width: 25%;
+                height: 550px;
+                background-color: $Rectangle_Background;
+                border-radius: 20px 0 0 20px;
+                img{
+                    margin: 15px;
+                }
+            }
+            .right{
+                width: 75%;
+                background-color: $White;
+                border-radius: 0 20px 20px 0;
+            }
         }
     }
 }

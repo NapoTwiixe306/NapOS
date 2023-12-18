@@ -219,7 +219,7 @@ a {
     align-items: center;
     justify-content: center;
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.255); }
-    .safari_container .safari_topbar svg {
+    .safari_container .safari_topbar img {
       margin-left: 15px; }
     .safari_container .safari_topbar input[type="search"] {
       width: 50%;
@@ -307,6 +307,42 @@ a {
             color: #595858;
             width: 80%;
             margin-left: 10px; }
+
+/*Light Theme*/
+/*TopBar*/
+/*Navbar*/
+/*Safari*/
+/*Settings*/
+/*DarkTheme*/
+/*TopBar*/
+/*Navbar*/
+/*Safari*/
+/*Settings*/
+.Settings_Container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .Settings_Container .Container {
+    width: 1100px;
+    height: 550px;
+    background-color: #f5f5f580;
+    backdrop-filter: blur(50px);
+    border-radius: 20px; }
+    .Settings_Container .Container .item {
+      display: flex;
+      justify-content: space-between; }
+      .Settings_Container .Container .item .left {
+        width: 25%;
+        height: 550px;
+        background-color: #d6d1d1;
+        border-radius: 20px 0 0 20px; }
+        .Settings_Container .Container .item .left img {
+          margin: 15px; }
+      .Settings_Container .Container .item .right {
+        width: 75%;
+        background-color: #ffffff;
+        border-radius: 0 20px 20px 0; }
 
 /*Light Theme*/
 /*TopBar*/

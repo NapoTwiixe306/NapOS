@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import moi from "../../img/Shape.png";
 import bg from "../../img/Suggestions/suggestion.png";
+import close from '../../img/close.svg'
 import Portfolio from "./Portfolio";
 export default function Safari() {
   const suggestions = [
@@ -38,40 +39,12 @@ export default function Safari() {
     <>
       <div className="safari_container">
         <div className="safari_topbar">
-        
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="52"
-            height="12"
-            viewBox="0 0 52 12"
-            fill="none"
-            style={{ cursor: "pointer" }}
-          >
-            {Array.from({ length: 3 }, (_, index) => (
-              <circle
-                key={index}
-                cx={index * 20 + 6}
-                cy="6"
-                r="6"
-                fill={
-                  index === 0 ? "#F96057" : index === 1 ? "#F8CE52" : "#5FCF65"
-                }
-                style={{ cursor: "pointer" }}
-              />
-            ))}
-            {Array.from({ length: 3 }, (_, index) => (
-              <circle
-                key={index}
-                cx={index * 20 + 6}
-                cy="6"
-                r="5.75"
-                stroke="black"
-                strokeOpacity="0.1"
-                strokeWidth="0.5"
-                style={{ mixBlendMode: "luminosity" }}
-              />
-            ))}
-          </svg>
+          <Image 
+            src={close}
+            alt="close"
+            
+          />
+          
           <input
             type="search"
             name=""
