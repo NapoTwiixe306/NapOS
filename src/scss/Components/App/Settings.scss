@@ -36,7 +36,7 @@
           width: 70%;
           height: 20px;
           background-color: $Placeholder_Input_Login;
-          padding-left: 15px;            
+          padding-left: 15px;
           border-radius: 5px;
           &::placeholder {
             width: 100%;
@@ -53,26 +53,26 @@
           }
         }
         .maj {
-            margin-left: 15px;
-            color: $Text_List;
-            position: relative;
-          
-            .notific {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-              background-color: red;
-              color: white;
-              border-radius: 50%;
-              width: 20px;
-              height: 20px;
-              text-align: center;
-              position: absolute;
-              top: 0px;
-              right: 35px;
-            }
+          margin-left: 15px;
+          color: $Text_List;
+          position: relative;
+
+          .notific {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            position: absolute;
+            top: 0px;
+            right: 35px;
           }
-          
+        }
+
         .item {
           display: flex;
           flex-direction: column;
@@ -83,7 +83,7 @@
             color: $Text_List;
             margin-bottom: 15px;
             transition: 0.3s;
-          
+
             &.selected {
               display: flex;
               align-items: center;
@@ -94,21 +94,21 @@
               border-radius: 5px;
               background-color: $Selected_Item;
               padding-left: 10px;
-          
+
               &:hover {
-                color: white; 
-                padding-left: 10px; 
-                cursor: default; 
+                color: white;
+                padding-left: 10px;
+                cursor: default;
               }
             }
-          
+
             &:hover {
               color: $Selected_Item;
               padding-left: 10px;
               cursor: pointer;
             }
           }
-          
+
           .res {
             .reseau {
               display: flex;
@@ -124,10 +124,70 @@
         }
       }
       .right {
+        display: flex;
+        flex-direction: column;
         width: 75%;
         background-color: $WhiteCustom;
         backdrop-filter: blur(50px);
         border-radius: 0 20px 20px 0;
+
+        .network {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          display: flex;
+          flex-direction: column;
+          gap: 50px;
+          h1 {
+            margin-bottom: 10px;
+          }
+          .hotspots {
+            .cadre {
+              width: 375px;
+              height: 42px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              border-radius: 10px;
+              border: 2px solid #ffffff;
+              background: rgba(0, 0, 0, 0.178);
+              .one {
+                display: flex;
+                justify-content: space-between; 
+                gap: 15px;
+                width: 100%; 
+                padding: 0 15px;
+              }
+            }
+          }
+          .knows {
+            .cadre {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              width: 375px;
+              height: 120px;
+              border-radius: 10px;
+              border: 2px solid #ffffff;
+              background: rgba(0, 0, 0, 0.178);
+              gap: 15px;
+              .one {
+                display: flex;
+                justify-content: space-between; 
+                gap: 15px;
+                width: 100%;
+                padding: 0 15px;
+
+                p {
+                  margin: 0;
+                  font-weight: 500;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }

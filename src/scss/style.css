@@ -414,10 +414,57 @@ a {
             display: flex;
             align-items: center; }
       .Settings_Container .Container .item .right {
+        display: flex;
+        flex-direction: column;
         width: 75%;
         background-color: #ffffffaa;
         backdrop-filter: blur(50px);
         border-radius: 0 20px 20px 0; }
+        .Settings_Container .Container .item .right .network {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          display: flex;
+          flex-direction: column;
+          gap: 50px; }
+          .Settings_Container .Container .item .right .network h1 {
+            margin-bottom: 10px; }
+          .Settings_Container .Container .item .right .network .hotspots .cadre {
+            width: 375px;
+            height: 42px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 10px;
+            border: 2px solid #ffffff;
+            background: rgba(0, 0, 0, 0.178); }
+            .Settings_Container .Container .item .right .network .hotspots .cadre .one {
+              display: flex;
+              justify-content: space-between;
+              gap: 15px;
+              width: 100%;
+              padding: 0 15px; }
+          .Settings_Container .Container .item .right .network .knows .cadre {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 375px;
+            height: 120px;
+            border-radius: 10px;
+            border: 2px solid #ffffff;
+            background: rgba(0, 0, 0, 0.178);
+            gap: 15px; }
+            .Settings_Container .Container .item .right .network .knows .cadre .one {
+              display: flex;
+              justify-content: space-between;
+              gap: 15px;
+              width: 100%;
+              padding: 0 15px; }
+              .Settings_Container .Container .item .right .network .knows .cadre .one p {
+                margin: 0;
+                font-weight: 500; }
 
 /*Light Theme*/
 /*TopBar*/

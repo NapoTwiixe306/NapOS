@@ -2,6 +2,8 @@ import Image from "next/image";
 import React, { useState } from "react";
 import close from "../../img/close.svg";
 import avatar from "../../img/login/avatar.svg";
+import icons from "../../img/paint.svg";
+import lock from "../../img/lock.svg";
 import { Settings_List } from "../List/Settings_List";
 
 export default function Settings() {
@@ -48,7 +50,42 @@ export default function Settings() {
               </div>
             </div>
             <div className="sepa"></div>
-            <div className="right">right</div>
+            <div className="right">
+              <div className="title">
+                <p>Wifi</p>
+              </div>
+              <div className="network">
+                <div className="connected">
+                  <h1>Wifi</h1>
+                </div>
+                <div className="hotspots">
+                  <h1>Personal Hotspots</h1>
+                  <div className="cadre">
+                    <div className="one">
+                      <p>First’s Personal Hotspot</p>
+                      <Image src={lock} alt="icons" />
+                    </div>
+                  </div>
+                </div>
+                <div className="knows">
+                  <h1>Réseaux Connus</h1>
+                  <div className="cadre">
+                    <div className="one">
+                      <p>Orange-edfa8</p>
+                      <Image src={icons} alt="icons" />
+                    </div>
+                    <div className="one">
+                      <p>Orange-edfa8</p>
+                      <Image src={icons} alt="icons" />
+                    </div>
+                    <div className="one">
+                      <p>Orange-edfa8</p>
+                      <Image src={icons} alt="icons" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
