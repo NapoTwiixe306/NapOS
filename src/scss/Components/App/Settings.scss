@@ -130,18 +130,19 @@
         background-color: $WhiteCustom;
         backdrop-filter: blur(50px);
         border-radius: 0 20px 20px 0;
-
+      
         .network {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
+          flex: 1; /* Take up remaining vertical space */
           display: flex;
           flex-direction: column;
+          justify-content: center; /* Center vertically */
+          align-items: center; /* Center horizontally */
           gap: 50px;
+      
           h1 {
             margin-bottom: 10px;
           }
+      
           .hotspots {
             .cadre {
               width: 575px;
@@ -152,6 +153,7 @@
               border-radius: 10px;
               border: 2px solid #ffffff;
               background: rgba(0, 0, 0, 0.178);
+      
               .one {
                 display: flex;
                 justify-content: space-between;
@@ -161,6 +163,7 @@
               }
             }
           }
+      
           .knows {
             .cadre {
               display: flex;
@@ -173,13 +176,14 @@
               border: 2px solid #ffffff;
               background: rgba(0, 0, 0, 0.178);
               gap: 15px;
+      
               .one {
                 display: flex;
                 justify-content: space-between;
                 gap: 15px;
                 width: 100%;
                 padding: 0 15px;
-
+      
                 p {
                   margin: 0;
                   font-weight: 500;
@@ -189,6 +193,7 @@
           }
         }
       }
+      
     }
   }
 }

@@ -7,9 +7,8 @@ import { Settings_List } from "../List/Settings_List";
 import { renderSelectedComponent } from "@/src/utils/SettingsImport";
 export default function Settings() {
   const [selectedTab, setSelectedTab] = useState<string | null>(null);
-  const [showNotification, setShowNotification] = useState<boolean>(true); // Mettez cette valeur à true pour afficher la notification
+  const [showNotification, setShowNotification] = useState<boolean>(true);
 
-  // Fonction pour gérer le clic sur un élément <p>
   const handleTabClick = (tabName: string) => {
     setSelectedTab(tabName);
   };
