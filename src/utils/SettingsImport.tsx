@@ -16,10 +16,10 @@ interface TabComponents {
   Notifications: () => React.JSX.Element;
   Son: () => React.JSX.Element;
   Concentration: () => React.JSX.Element;
-  'Temps d\'écran': () => React.JSX.Element;
+  "Temps d'écran": () => React.JSX.Element;
   Général: () => React.JSX.Element;
   Themes: () => React.JSX.Element;
-  [key: string]: () => React.JSX.Element; 
+  [key: string]: () => React.JSX.Element;
 }
 
 const tabComponents: TabComponents = {
@@ -29,12 +29,14 @@ const tabComponents: TabComponents = {
   Notifications: Notification,
   Son: Sound,
   Concentration: Focus,
-  'Temps d\'écran': Screen,
+  "Temps d'écran": Screen,
   Général: General,
   Themes,
 };
 
-export const renderSelectedComponent = (selectedTab: string | null): JSX.Element => {
+export const renderSelectedComponent = (
+  selectedTab: string | null,
+): JSX.Element => {
   if (selectedTab && tabComponents[selectedTab]) {
     const Component = tabComponents[selectedTab] as React.ComponentType;
     return <Component />;

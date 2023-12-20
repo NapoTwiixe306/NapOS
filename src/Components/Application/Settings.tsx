@@ -51,9 +51,8 @@ export default function Settings() {
             <div className="sepa"></div>
             <div className="right">
               <div className="items">
-              {renderSelectedComponent(selectedTab)}
-
-                </div>
+                {renderSelectedComponent(selectedTab)}
+              </div>
             </div>
           </div>
         </div>

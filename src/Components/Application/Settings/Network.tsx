@@ -1,7 +1,5 @@
-import React from 'react'
+import React from "react";
 
 export default function Network() {
-  return (
-    <div>Network</div>
-  )
+  return <div>Network</div>;
 }

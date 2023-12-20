@@ -1,7 +1,5 @@
-import React from 'react'
+import React from "react";
 
 export default function Themes() {
-  return (
-    <div>Themes</div>
-  )
+  return <div>Themes</div>;
 }
