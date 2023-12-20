@@ -431,7 +431,7 @@ a {
           .Settings_Container .Container .item .right .network h1 {
             margin-bottom: 10px; }
           .Settings_Container .Container .item .right .network .hotspots .cadre {
-            width: 375px;
+            width: 575px;
             height: 42px;
             display: flex;
             flex-direction: column;
@@ -450,7 +450,7 @@ a {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 375px;
+            width: 575px;
             height: 120px;
             border-radius: 10px;
             border: 2px solid #ffffff;
