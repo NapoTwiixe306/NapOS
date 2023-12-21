@@ -1,18 +1,14 @@
 import Image from "next/image";
 import icons from "../../../img/paint.svg";
 import lock from "../../../img/lock.svg";
+import wifisi from "../../../img/svg_apple/wifi-signal.svg";
+import selock from "../../../img/svg_apple/secure-lock.svg";
 
 export default function Wifi() {
   return (
     <>
       <div className="Wifi">
-        <div className="title">
-          <p>Wifi</p>
-        </div>
         <div className="network">
-          <div className="connected">
-            <h1>Wifi</h1>
-          </div>
           <div className="hotspots">
             <h1>Personal Hotspots</h1>
             <div className="cadre">

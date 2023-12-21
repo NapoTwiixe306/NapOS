@@ -8,7 +8,7 @@ import { Topbar_List_Default } from "./List/Topbar_List_default";
 
 export default function Topbar() {
   return (
-    <div className="Topbar_Container">
+    <header className="Topbar_Container">
       <div className="Topbar">
         <div className="icon">
           <Image src={icon} width={20} height={20} alt="icon from NapOS" />
@@ -39,6 +39,6 @@ export default function Topbar() {
           <p className="date">Jeu. 7 Déc. 11:24</p>
         </div>
       </div>
-    </div>
+    </header>
   );
 }
