@@ -27,7 +27,7 @@ export default function Settings() {
                 <Image src={avatar} alt="avatar" width={50} height={50} />
                 <div className="info">
                   <p>Users</p>
-                  <p>Identifian Apple</p>
+                  <p>Identifiant Apple</p>
                 </div>
               </div>
               <div className="maj">
