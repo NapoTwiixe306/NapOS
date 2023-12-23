@@ -7,14 +7,14 @@
   transform: translate(-50%, -50%);
   .Container {
     width: 1100px;
-    height: 650px;
+    height: 600px;
     border-radius: 20px;
     .items {
       display: flex;
       justify-content: space-between;
       .left {
         width: 25%;
-        height: 650px;
+        height: 600px;
         background-color: $Rectangle_Background;
         border-radius: 20px 0 0 20px;
         .close_img {
