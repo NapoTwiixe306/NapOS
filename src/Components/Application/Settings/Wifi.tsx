@@ -2,7 +2,6 @@ import Image from "next/image";
 import icons from "../../../img/paint.svg";
 import lock from "../../../img/lock.svg";
 
-
 export default function Wifi() {
   return (
     <>

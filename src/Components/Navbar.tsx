@@ -21,7 +21,7 @@ import Trash from "../img/Navbar/Trash.png";
 
 import SafariComponent from "./Application/Safari";
 import SettingsComponent from "./Application/Settings";
-import FinderComponent from './Application/Finder'
+import FinderComponent from "./Application/Finder";
 export default function Navbar() {
   const [showSafariComponent, setShowSafariComponent] = useState(false);
   const [showSettingsComponent, setShowSettingsComponent] = useState(false);
@@ -59,7 +59,6 @@ export default function Navbar() {
     setIsActiveSettings(false);
   };
 
-
   return (
     <>
       {showSafariComponent && <SafariComponent />}
@@ -72,7 +71,6 @@ export default function Navbar() {
           alt=""
           layout="responsive"
           onClick={handleFinderClick}
-
           style={{ cursor: "pointer" }}
         />
         <Image

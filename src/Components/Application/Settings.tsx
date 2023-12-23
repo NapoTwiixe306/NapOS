@@ -24,7 +24,12 @@ export default function Settings() {
                 <input type="search" name="" id="" placeholder="Rechercher" />
               </div>
               <div className="user">
-                <Image src={avatar as any} alt="avatar" width={50} height={50} />
+                <Image
+                  src={avatar as any}
+                  alt="avatar"
+                  width={50}
+                  height={50}
+                />
                 <div className="info">
                   <p>Users</p>
                   <p>Identifiant Apple</p>

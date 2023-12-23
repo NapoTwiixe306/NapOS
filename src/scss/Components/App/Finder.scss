@@ -1,27 +1,65 @@
-@import '../../base/Variables';
+@import "../../base/Variables";
 
-.finder{
+.finder {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  .Container{
+  .Container {
     width: 1100px;
     height: 650px;
     border-radius: 20px;
-    .items{
+    .items {
       display: flex;
       justify-content: space-between;
-      .left{
+      .left {
         width: 25%;
         height: 650px;
         background-color: $Rectangle_Background;
         border-radius: 20px 0 0 20px;
-        .close_img{
+        .close_img {
           margin: 15px;
         }
+        .content {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          margin: 15px;
+          p {
+            margin: 10px;
+            font-size: 15px;
+            transition: 0.3s;
+            &.selected {
+              display: flex;
+              align-items: center;
+              width: 190px;
+              height: 30px;
+              font-weight: bold;
+              color: white;
+              border-radius: 5px;
+              background-color: $Selected_Item;
+              padding-left: 10px;
+
+              &:hover {
+                color: white;
+                padding-left: 10px;
+                cursor: default;
+              }
+            }
+
+            &:hover {
+              color: $Selected_Item;
+              padding-left: 10px;
+              cursor: pointer;
+            }
+          }
+
+          span {
+            color: rgba(0, 0, 0, 0.25);
+          }
+        }
       }
-      .right{
+      .right {
         display: flex;
         flex-direction: column;
         align-items: center; /* Center horizontally */
