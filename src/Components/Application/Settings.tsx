@@ -19,12 +19,12 @@ export default function Settings() {
         <div className="Container">
           <div className="item">
             <div className="left">
-              <Image src={close} alt="close" />
+              <Image src={close as any} alt="close" />
               <div className="input">
                 <input type="search" name="" id="" placeholder="Rechercher" />
               </div>
               <div className="user">
-                <Image src={avatar} alt="avatar" width={50} height={50} />
+                <Image src={avatar as any} alt="avatar" width={50} height={50} />
                 <div className="info">
                   <p>Users</p>
                   <p>Identifiant Apple</p>

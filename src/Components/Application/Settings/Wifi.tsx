@@ -13,7 +13,7 @@ export default function Wifi() {
             <div className="cadre">
               <div className="one">
                 <p>First’s Personal Hotspot</p>
-                <Image src={lock} alt="icons" />
+                <Image src={lock as any} alt="icons" />
               </div>
             </div>
           </div>
@@ -22,15 +22,15 @@ export default function Wifi() {
             <div className="cadre">
               <div className="one">
                 <p>Orange-edfa8</p>
-                <Image src={icons} alt="icons" />
+                <Image src={icons as any} alt="icons" />
               </div>
               <div className="one">
                 <p>Orange-edfa8</p>
-                <Image src={icons} alt="icons" />
+                <Image src={icons as any} alt="icons" />
               </div>
               <div className="one">
                 <p>Orange-edfa8</p>
-                <Image src={icons} alt="icons" />
+                <Image src={icons as any} alt="icons" />
               </div>
             </div>
           </div>

@@ -13,7 +13,7 @@ export default function Bluetooth() {
               <div className="cadre">
                 <div className="one">
                   <p>Airpods Pro de Julien</p>
-                  <Image src={icons} alt="icons" />
+                  <Image src={icons as any} alt="icons" />
 
                 </div>
               </div>
@@ -23,15 +23,15 @@ export default function Bluetooth() {
               <div className="cadre">
                 <div className="one">
                   <p><strong>Airpods Pro</strong></p>
-                  <Image src={icons} alt="icons" />
+                  <Image src={icons as any} alt="icons" />
                 </div>
                 <div className="one">
                   <p><strong>Iphone 15 pro max</strong></p>
-                  <Image src={icons} alt="icons" />
+                  <Image src={icons as any} alt="icons" />
                 </div>
                 <div className="one">
                   <p><strong>Airpods Pro</strong></p>
-                  <Image src={icons} alt="icons" />
+                  <Image src={icons as any} alt="icons" />
                 </div>
               </div>
             </div>

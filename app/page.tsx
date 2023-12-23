@@ -13,7 +13,7 @@ export default function page() {
         <div className="login_form">
           <div className="avatar"></div>
           <div className="input">
-            <Image src={avatar} width={50} height={50} alt="Avatar" />
+            <Image src={avatar as any} width={50} height={50} alt="Avatar" />
             <form action="">
               <input type="text" placeholder="Enter Password..." />
             </form>

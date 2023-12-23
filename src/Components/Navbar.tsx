@@ -45,10 +45,8 @@ export default function Navbar() {
     setShowSettingsComponent(!showSettingsComponent);
     setShowSafariComponent(false);
     setShowFinderComponent(false);
-
     setIsActiveSettings(!isActiveSettings);
     setIsActiveFinder(false);
-
     setIsActiveSafari(false);
   };
 
@@ -70,7 +68,7 @@ export default function Navbar() {
 
       <footer className="footer">
         <Image
-          src={Finder}
+          src={Finder as any}
           alt=""
           layout="responsive"
           onClick={handleFinderClick}
@@ -78,13 +76,13 @@ export default function Navbar() {
           style={{ cursor: "pointer" }}
         />
         <Image
-          src={Launch}
+          src={Launch as any}
           alt=""
           layout="responsive"
           style={{ cursor: "pointer" }}
         />
         <Image
-          src={Safari}
+          src={Safari as any}
           alt=""
           layout="responsive"
           onClick={handleSafariClick}
@@ -92,55 +90,55 @@ export default function Navbar() {
           style={{ cursor: "pointer" }}
         />
         <Image
-          src={Imessage}
+          src={Imessage as any}
           alt=""
           layout="responsive"
           style={{ cursor: "pointer" }}
         />
         <Image
-          src={Mail}
+          src={Mail as any}
           alt=""
           layout="responsive"
           style={{ cursor: "pointer" }}
         />
         <Image
-          src={Maps}
+          src={Maps as any}
           alt=""
           layout="responsive"
           style={{ cursor: "pointer" }}
         />
         <Image
-          src={Photo}
+          src={Photo as any}
           alt=""
           layout="responsive"
           style={{ cursor: "pointer" }}
         />
         <Image
-          src={Facetime}
+          src={Facetime as any}
           alt=""
           layout="responsive"
           style={{ cursor: "pointer" }}
         />
         <Image
-          src={Calendar}
+          src={Calendar as any}
           alt=""
           layout="responsive"
           style={{ cursor: "pointer" }}
         />
         <Image
-          src={Contact}
+          src={Contact as any}
           alt=""
           layout="responsive"
           style={{ cursor: "pointer" }}
         />
         <Image
-          src={AppleTV}
+          src={AppleTV as any}
           alt=""
           layout="responsive"
           style={{ cursor: "pointer" }}
         />
         <Image
-          src={Settings}
+          src={Settings as any}
           alt=""
           layout="responsive"
           onClick={handleSettingsClick}
@@ -148,13 +146,13 @@ export default function Navbar() {
           style={{ cursor: "pointer" }}
         />
         <Image
-          src={Note}
+          src={Note as any}
           alt=""
           layout="responsive"
           style={{ cursor: "pointer" }}
         />
         <Image
-          src={Music}
+          src={Music as any}
           alt=""
           layout="responsive"
           style={{ cursor: "pointer" }}
@@ -164,19 +162,19 @@ export default function Navbar() {
         <div className="separator"></div>
 
         <Image
-          src={Visual}
+          src={Visual as any}
           alt=""
           layout="responsive"
           style={{ cursor: "pointer" }}
         />
         <Image
-          src={Folder}
+          src={Folder as any}
           alt=""
           layout="responsive"
           style={{ cursor: "pointer" }}
         />
         <Image
-          src={Trash}
+          src={Trash as any}
           alt=""
           layout="responsive"
           style={{ cursor: "pointer" }}

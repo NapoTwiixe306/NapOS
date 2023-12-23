@@ -39,7 +39,7 @@ export default function Safari() {
     <>
       <div className="safari_container">
         <div className="safari_topbar">
-          <Image src={close} alt="close" />
+          <Image src={close as any} alt="close" />
 
           <input type="search" name="" id="" placeholder={inputPlaceholder} />
         </div>
@@ -52,7 +52,7 @@ export default function Safari() {
                 <h1>Favorites</h1>
                 <div className="img">
                   <Image
-                    src={moi}
+                    src={moi as any}
                     alt="moi"
                     onClick={handlePortfolioClick}
                     width={70}
@@ -82,7 +82,7 @@ export default function Safari() {
                   {suggestions.map((text, index) => (
                     <div className="img" key={index}>
                       <p>{text}</p>
-                      <Image src={bg} alt="alt" />
+                      <Image src={bg as any} alt="alt" />
                     </div>
                   ))}
                 </div>

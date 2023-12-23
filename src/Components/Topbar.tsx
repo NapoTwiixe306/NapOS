@@ -32,10 +32,10 @@ export default function Topbar() {
           ))}
         </div>
         <div className="icons_topbar">
-          <Image src={battery} alt="Battry" />
-          <Image src={search} alt="Battry" />
-          <Image src={wifi} alt="Battry" />
-          <Image src={test} alt="Battry" width={20} height={20} />
+          <Image src={battery as any} alt="Battry" />
+          <Image src={search as any} alt="Battry" />
+          <Image src={wifi as any} alt="Battry" />
+          <Image src={test as any} alt="Battry" width={20} height={20} />
           <p className="date">Jeu. 7 Déc. 11:24</p>
         </div>
       </div>
