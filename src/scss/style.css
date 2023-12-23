@@ -383,7 +383,7 @@ a {
       .Settings_Container .Container .item .left {
         width: 25%;
         height: 550px;
-        background-color: #d6d1d1aa;
+        background-color: #d6d1d1;
         backdrop-filter: blur(50px);
         border-radius: 20px 0 0 20px; }
         .Settings_Container .Container .item .left img {
@@ -466,7 +466,7 @@ a {
         justify-content: center;
         /* Center vertically */
         width: 75%;
-        background-color: #ffffffaa;
+        background-color: white;
         backdrop-filter: blur(50px);
         border-radius: 0 20px 20px 0; }
 
@@ -487,6 +487,46 @@ a {
   height: 100%; }
   .Portfolio_container button {
     cursor: pointer; }
+
+/*Light Theme*/
+/*TopBar*/
+/*Navbar*/
+/*Safari*/
+/*Settings*/
+/*DarkTheme*/
+/*TopBar*/
+/*Navbar*/
+/*Safari*/
+/*Settings*/
+.finder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .finder .Container {
+    width: 1100px;
+    height: 650px;
+    border-radius: 20px; }
+    .finder .Container .items {
+      display: flex;
+      justify-content: space-between; }
+      .finder .Container .items .left {
+        width: 25%;
+        height: 650px;
+        background-color: #d6d1d1;
+        border-radius: 20px 0 0 20px; }
+        .finder .Container .items .left .close_img {
+          margin: 15px; }
+      .finder .Container .items .right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Center horizontally */
+        justify-content: center;
+        /* Center vertically */
+        width: 75%;
+        background-color: white;
+        border-radius: 0 20px 20px 0; }
 
 /*Light Theme*/
 /*TopBar*/
