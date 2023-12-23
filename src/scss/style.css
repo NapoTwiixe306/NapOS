@@ -583,7 +583,7 @@ a {
 }
 .finder .Container {
   width: 1100px;
-  height: 600px;
+  height: 550px;
   border-radius: 20px;
 }
 .finder .Container .items {
@@ -592,7 +592,7 @@ a {
 }
 .finder .Container .items .left {
   width: 25%;
-  height: 600px;
+  height: 550px;
   background-color: #d6d1d1;
   border-radius: 20px 0 0 20px;
 }
