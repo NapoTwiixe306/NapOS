@@ -21,38 +21,60 @@ import Trash from "../img/Navbar/Trash.png";
 
 import SafariComponent from "./Application/Safari";
 import SettingsComponent from "./Application/Settings";
-
+import FinderComponent from './Application/Finder'
 export default function Navbar() {
   const [showSafariComponent, setShowSafariComponent] = useState(false);
   const [showSettingsComponent, setShowSettingsComponent] = useState(false);
+  const [showFinderComponent, setShowFinderComponent] = useState(false);
 
   const [isActiveSafari, setIsActiveSafari] = useState(false);
   const [isActiveSettings, setIsActiveSettings] = useState(false);
+  const [isActiveFinder, setIsActiveFinder] = useState(false);
 
   const handleSafariClick = () => {
     setShowSafariComponent(!showSafariComponent);
     setShowSettingsComponent(false);
+    setShowFinderComponent(false);
+
     setIsActiveSafari(!isActiveSafari);
     setIsActiveSettings(false);
+    setIsActiveFinder(false);
   };
 
   const handleSettingsClick = () => {
     setShowSettingsComponent(!showSettingsComponent);
     setShowSafariComponent(false);
+    setShowFinderComponent(false);
+
     setIsActiveSettings(!isActiveSettings);
+    setIsActiveFinder(false);
+
     setIsActiveSafari(false);
   };
+
+  const handleFinderClick = () => {
+    setShowFinderComponent(!showFinderComponent);
+    setShowSafariComponent(false);
+    setShowSettingsComponent(false);
+    setIsActiveFinder(!isActiveFinder);
+    setIsActiveSafari(false);
+    setIsActiveSettings(false);
+  };
+
 
   return (
     <>
       {showSafariComponent && <SafariComponent />}
       {showSettingsComponent && <SettingsComponent />}
+      {showFinderComponent && <FinderComponent />}
 
       <footer className="footer">
         <Image
           src={Finder}
           alt=""
           layout="responsive"
+          onClick={handleFinderClick}
+
           style={{ cursor: "pointer" }}
         />
         <Image
