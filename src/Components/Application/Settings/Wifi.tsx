@@ -1,8 +1,7 @@
 import Image from "next/image";
 import icons from "../../../img/paint.svg";
 import lock from "../../../img/lock.svg";
-import wifisi from "../../../img/svg_apple/wifi-signal.svg";
-import selock from "../../../img/svg_apple/secure-lock.svg";
+
 
 export default function Wifi() {
   return (
