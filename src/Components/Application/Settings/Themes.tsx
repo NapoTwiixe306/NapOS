@@ -1,5 +1,5 @@
-'use client'
-import React, {useEffect, useState} from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 
 export default function Themes() {
   const [darkMode, setDarkMode] = useState<boolean>(false);
@@ -12,10 +12,10 @@ export default function Themes() {
     document.body.classList.toggle("dark", darkMode);
   }, [darkMode]);
   return (
-      <>
-        <button onClick={toggleDarkMode}>
-          {darkMode ? "Disable Dark Mode" : "Enable Dark Mode"}
-        </button>
-      </>
+    <>
+      <button onClick={toggleDarkMode}>
+        {darkMode ? "Disable Dark Mode" : "Enable Dark Mode"}
+      </button>
+    </>
   );
 }

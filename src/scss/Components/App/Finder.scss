@@ -12,6 +12,11 @@
     .items {
       display: flex;
       justify-content: space-between;
+      .sepa {
+        width: 3px;
+        height: 550px;
+        background-color: #929292c7;
+      }
       .left {
         width: 25%;
         height: 550px;
