@@ -35,7 +35,6 @@ export default function Navbar() {
     setShowSafariComponent(!showSafariComponent);
     setShowSettingsComponent(false);
     setShowFinderComponent(false);
-
     setIsActiveSafari(!isActiveSafari);
     setIsActiveSettings(false);
     setIsActiveFinder(false);
@@ -71,6 +70,7 @@ export default function Navbar() {
           alt=""
           layout="responsive"
           onClick={handleFinderClick}
+          className={isActiveFinder ? "active" : ""}
           style={{ cursor: "pointer" }}
         />
         <Image
