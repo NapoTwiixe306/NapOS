@@ -6,6 +6,14 @@ body {
   background-attachment: fixed;
 }
 
+body.dark{
+  background-image: url("../img/wallpaper-dark.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
 @import "./base/Reset.scss";
 @import "./base/Variables.scss";
 @import "./fonts/font.scss";
