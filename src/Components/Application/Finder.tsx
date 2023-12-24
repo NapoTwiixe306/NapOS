@@ -7,18 +7,10 @@ import {useEffect, useState} from "react";
 export default function Finder() {
   const [selectedTab, setSelectedTab] = useState<string | null>(null);
   const [showNotification, setShowNotification] = useState<boolean>(true);
-  const [darkMode, setDarkMode] = useState<boolean>(false);
 
   const handleTabClick = (tabName: string) => {
     setSelectedTab(tabName);
   };
-  const toggleDarkMode = () => {
-    setDarkMode((prevDarkMode) => !prevDarkMode);
-  };
-  useEffect(() => {
-    // Mettez à jour la classe du body lors du changement du mode sombre
-    document.body.classList.toggle("dark", darkMode);
-  }, [darkMode]);
   return (
     <>
       <div className="finder">
@@ -74,10 +66,8 @@ export default function Finder() {
               </div>
             </div>
             <div className="sepa"></div>
-            <div className={`right ${darkMode ? "dark" : ""}`}>
-              <button onClick={toggleDarkMode}>
-                {darkMode ? "Disable Dark Mode" : "Enable Dark Mode"}
-              </button>
+            <div className="right">
+
             </div>
           </div>
         </div>
