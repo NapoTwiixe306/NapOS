@@ -20,7 +20,7 @@
       .left {
         width: 25%;
         height: 550px;
-        background-color: $Rectangle_Background;
+        background-color: $Rectangle_Background_Dark;
         border-radius: 20px 0 0 20px;
         .close_img {
           margin: 15px;
@@ -31,6 +31,7 @@
           gap: 15px;
           margin: 15px;
           p {
+            color: white;
             margin: 10px;
             font-size: 15px;
             transition: 0.3s;
@@ -60,7 +61,7 @@
           }
 
           span {
-            color: rgba(0, 0, 0, 0.25);
+            color: rgba(255, 255, 255, 0.56);
           }
         }
       }
@@ -70,7 +71,7 @@
         align-items: center; /* Center horizontally */
         justify-content: center; /* Center vertically */
         width: 75%;
-        background-color: $WhiteCustom;
+        background-color: $Rectangle_Background_Dark;
         border-radius: 0 20px 20px 0;
       }
     }

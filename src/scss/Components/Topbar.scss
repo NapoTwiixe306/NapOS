@@ -3,18 +3,18 @@
 .Topbar_Container {
   width: 100%;
   height: 25px;
-  background-color: $BackGround_TopBar;
+  background-color: $BackGround_TopBar_Dark;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 10px; /* Ajustez la marge */
+  padding: 0 10px;
 }
 
 .Topbar {
   display: flex;
   align-items: center;
   gap: 10px;
-  flex-grow: 1; /* Permet à .list de prendre tout l'espace restant */
+  flex-grow: 1;
 
   .icon {
     display: flex;
@@ -22,6 +22,7 @@
   }
 
   .list {
+    color: $White;
     display: flex;
     gap: 10px;
   }
@@ -31,6 +32,7 @@
     display: inline-block;
 
     .dropbtn {
+      color: $White;
       font-size: 16px;
       background-color: transparent;
       border: none;
@@ -47,7 +49,7 @@
       z-index: 1;
 
       .dropdown-options {
-        color: $Black;
+        color: $White;
         padding: 5px 5px;
         text-decoration: none;
         display: block;
@@ -70,7 +72,10 @@
     display: flex;
     align-items: center;
     gap: 30px;
+    img{
+    }
     p {
+      color: $White;
       display: flex;
       align-items: center;
       font-size: 16px;

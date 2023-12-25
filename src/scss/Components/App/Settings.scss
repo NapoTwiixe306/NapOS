@@ -23,7 +23,7 @@
       .left {
         width: 25%;
         height: 550px;
-        background-color: $Rectangle_Background;
+        background-color: $Rectangle_Background_Dark;
 
         backdrop-filter: blur(50px);
         border-radius: 20px 0 0 20px;
@@ -131,7 +131,7 @@
         align-items: center; /* Center horizontally */
         justify-content: center; /* Center vertically */
         width: 75%;
-        background-color: $WhiteCustom;
+        background-color: $Rectangle_Background_Dark;
         backdrop-filter: blur(50px);
         border-radius: 0 20px 20px 0;
       }
