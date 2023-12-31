@@ -1,0 +1,13 @@
+@import "../../base/Variables";
+.Extends_Container {
+  display: flex;
+  justify-content: end;
+  margin: 10px 10px 0 0;
+  .content {
+    width: 340px;
+    height: 400px;
+    border-radius: 15px;
+    background-color: $Background_Utils_Dark;
+    backdrop-filter: blur(50px);
+  }
+}

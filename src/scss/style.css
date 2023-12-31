@@ -194,6 +194,28 @@ a {
   .footer img.active {
     border-bottom: 3px solid #605e5e; }
 
+/*ExtendsComponents*/
+/*Light Theme*/
+/*TopBar*/
+/*Navbar*/
+/*Safari*/
+/*Settings*/
+/*DarkTheme*/
+/*TopBar*/
+/*Navbar*/
+/*Safari*/
+/*Settings*/
+.Extends_Container {
+  display: flex;
+  justify-content: end;
+  margin: 10px 10px 0 0; }
+  .Extends_Container .content {
+    width: 340px;
+    height: 400px;
+    border-radius: 15px;
+    background-color: #1f1f1f80;
+    backdrop-filter: blur(50px); }
+
 /*App Design*/
 /*Light Theme*/
 /*TopBar*/

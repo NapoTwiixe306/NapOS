@@ -18,9 +18,13 @@ body.dark {
 @import "./base/Reset.scss";
 @import "./base/Variables.scss";
 @import "./fonts/font.scss";
+
 /*Components*/
 @import "./Components/Topbar.scss";
 @import "./Components/Navbar.scss";
+
+/*ExtendsComponents*/
+@import "./Components/ExtendsComponents/ExtendsHour";
 
 /*App Design*/
 @import "./Components/App/Safari.scss";
