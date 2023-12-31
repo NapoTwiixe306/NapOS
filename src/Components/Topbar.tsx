@@ -15,7 +15,7 @@ export default function Topbar() {
         </div>
         <div className="list">
           {Topbar_List_Default.map((item, index) => (
-            <div key={index}>
+            <di key={index}>
               {item.title && <strong>{item.title}</strong>}
               {item.name && (
                 <div className="dropdown">
@@ -28,7 +28,7 @@ export default function Topbar() {
                   </div>
                 </div>
               )}
-            </div>
+            </di>
           ))}
         </div>
         <div className="icons_topbar">
@@ -36,7 +36,7 @@ export default function Topbar() {
           <Image src={search as any} alt="Battry" />
           <Image src={wifi as any} alt="Battry" />
           <Image src={test as any} alt="Battry" width={20} height={20} />
-          <p className="date">Jeu. 7 Déc. 11:24</p>
+          <p className="date">Je. 7 Déc. 11:24</p>
         </div>
       </div>
     </header>
