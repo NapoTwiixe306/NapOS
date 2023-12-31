@@ -6,7 +6,6 @@ import { useEffect, useState } from "react";
 
 export default function Finder() {
   const [selectedTab, setSelectedTab] = useState<string | null>(null);
-  const [showNotification, setShowNotification] = useState<boolean>(true);
 
   const handleTabClick = (tabName: string) => {
     setSelectedTab(tabName);
