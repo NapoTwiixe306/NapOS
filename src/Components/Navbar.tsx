@@ -22,40 +22,66 @@ import Trash from "../img/Navbar/Trash.png";
 import SafariComponent from "./Application/Safari";
 import SettingsComponent from "./Application/Settings";
 import FinderComponent from "./Application/Finder";
+import NoteComponent from './Application/Note'
 export default function Navbar() {
   const [showSafariComponent, setShowSafariComponent] = useState(false);
   const [showSettingsComponent, setShowSettingsComponent] = useState(false);
   const [showFinderComponent, setShowFinderComponent] = useState(false);
+  const [showNoteComponent, setShowNoteComponent] = useState(false);
 
   const [isActiveSafari, setIsActiveSafari] = useState(false);
   const [isActiveSettings, setIsActiveSettings] = useState(false);
   const [isActiveFinder, setIsActiveFinder] = useState(false);
+  const [isActiveNote, setIsActiveNote] = useState(false);
 
   const handleSafariClick = () => {
     setShowSafariComponent(!showSafariComponent);
     setShowSettingsComponent(false);
     setShowFinderComponent(false);
+    setShowNoteComponent(false);
+
     setIsActiveSafari(!isActiveSafari);
     setIsActiveSettings(false);
     setIsActiveFinder(false);
+    setIsActiveNote(false);
   };
 
   const handleSettingsClick = () => {
     setShowSettingsComponent(!showSettingsComponent);
     setShowSafariComponent(false);
     setShowFinderComponent(false);
+    setShowNoteComponent(false);
     setIsActiveSettings(!isActiveSettings);
     setIsActiveFinder(false);
     setIsActiveSafari(false);
+    setIsActiveNote(false);
+
   };
 
   const handleFinderClick = () => {
     setShowFinderComponent(!showFinderComponent);
     setShowSafariComponent(false);
     setShowSettingsComponent(false);
+    setShowNoteComponent(false);
+
     setIsActiveFinder(!isActiveFinder);
     setIsActiveSafari(false);
     setIsActiveSettings(false);
+    setIsActiveNote(false);
+
+  };
+
+  const handleNoteClick = () => {
+    setShowFinderComponent(false);
+    setShowSafariComponent(false);
+    setShowSettingsComponent(false);
+    setShowNoteComponent(!isActiveNote);
+
+    setIsActiveFinder(false);
+    setIsActiveSafari(false);
+    setIsActiveSettings(false);
+    setIsActiveNote(!isActiveNote);
+
   };
 
   return (
@@ -63,6 +89,7 @@ export default function Navbar() {
       {showSafariComponent && <SafariComponent />}
       {showSettingsComponent && <SettingsComponent />}
       {showFinderComponent && <FinderComponent />}
+      {showNoteComponent && <NoteComponent />}
 
       <footer className="footer">
         <Image
@@ -147,6 +174,8 @@ export default function Navbar() {
           src={Note as any}
           alt=""
           layout="responsive"
+          onClick={handleNoteClick}
+          className={isActiveNote ? "active" : ""}
           style={{ cursor: "pointer" }}
         />
         <Image
