@@ -66,9 +66,9 @@ export default function Finder() {
             </div>
             <div className="sepa"></div>
             <div className="right">
-            {Finder_List.map((list, index) => (
-              <p key={index}>{list.name}</p>
-            ))}
+              {Finder_List.map((list, index) => (
+                <p key={index}>{list.name}</p>
+              ))}
             </div>
           </div>
         </div>

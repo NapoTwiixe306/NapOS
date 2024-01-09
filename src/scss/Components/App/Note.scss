@@ -1,0 +1,14 @@
+.Note_Container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  .Container {
+    width: 1100px;
+    height: 550px;
+    backdrop-filter: blur(50px);
+    border-radius: 20px;
+    background-color: rgba(255, 0, 0, 0.251);
+  }
+}

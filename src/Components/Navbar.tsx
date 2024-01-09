@@ -22,7 +22,7 @@ import Trash from "../img/Navbar/Trash.png";
 import SafariComponent from "./Application/Safari";
 import SettingsComponent from "./Application/Settings";
 import FinderComponent from "./Application/Finder";
-import NoteComponent from './Application/Note'
+import NoteComponent from "./Application/Note";
 export default function Navbar() {
   const [showSafariComponent, setShowSafariComponent] = useState(false);
   const [showSettingsComponent, setShowSettingsComponent] = useState(false);
@@ -55,7 +55,6 @@ export default function Navbar() {
     setIsActiveFinder(false);
     setIsActiveSafari(false);
     setIsActiveNote(false);
-
   };
 
   const handleFinderClick = () => {
@@ -68,7 +67,6 @@ export default function Navbar() {
     setIsActiveSafari(false);
     setIsActiveSettings(false);
     setIsActiveNote(false);
-
   };
 
   const handleNoteClick = () => {
@@ -81,7 +79,6 @@ export default function Navbar() {
     setIsActiveSafari(false);
     setIsActiveSettings(false);
     setIsActiveNote(!isActiveNote);
-
   };
 
   return (
