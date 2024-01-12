@@ -2,7 +2,7 @@
 import close from "../../img/close.svg";
 import Image from "next/image";
 import { Finder_List } from "../List/Finder_List";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function Finder() {
   const [selectedTab, setSelectedTab] = useState<string | null>(null);

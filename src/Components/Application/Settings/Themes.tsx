@@ -8,7 +8,6 @@ export default function Themes() {
     setDarkMode((prevDarkMode) => !prevDarkMode);
   };
   useEffect(() => {
-    // Mettez à jour la classe du body lors du changement du mode sombre
     document.body.classList.toggle("dark", darkMode);
   }, [darkMode]);
   return (

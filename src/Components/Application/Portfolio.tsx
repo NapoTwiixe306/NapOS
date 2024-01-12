@@ -15,7 +15,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ onClose }) => {
     <>
       <div className="Portfolio_container">
         <button onClick={handleClose}>Close</button>
-        <p>lorem*500</p>
+        <p>lorem500</p>
       </div>
     </>
   );
