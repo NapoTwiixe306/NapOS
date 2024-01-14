@@ -1,9 +1,12 @@
 import React from "react";
+import Image from "next/image";
+
 import close from "../../img/close.svg";
 import user from "../../img/Note/User.svg";
 import folder from '../../img/Note/Folder.svg'
-import Image from "next/image";
-
+import pin from '../../img/Note/pin.svg'
+import trash from '../../img/Note/trash.svg'
+import NoteProps from "../Props/NoteProps";
 export default function Note() {
   return (
     <div className="Note_Container">
@@ -40,7 +43,29 @@ export default function Note() {
             </div>
           </div>
           <div className="mid">
-            <p>mid</p>
+            <div className="icon">
+            <Image src={trash as any} alt="pin icons" width={16} height={16}/>
+
+            </div>
+            <div className="note">
+              <div className="ping">
+                <Image src={pin as any} alt="pin icons"/>
+                <p>Épingler</p>
+              </div>
+              <span className="sep"></span>
+
+              <div className="list">
+                <NoteProps text="Note 1" description="description"/>
+                
+                <NoteProps text="Note 2" description="description"/>
+                <NoteProps text="Note 3" description="description"/>
+                <NoteProps text="Note 4" description="description"/>
+                <NoteProps text="Note 5" description="description"/>
+                <NoteProps text="Note 6" description="description"/>
+                <NoteProps text="Note 7" description="description"/>
+                <NoteProps text="Note 8" description="description"/>
+              </div>
+            </div>
           </div>
           <div className="right">
             <p>right</p>
